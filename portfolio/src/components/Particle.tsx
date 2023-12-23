@@ -48,7 +48,7 @@ const Particle = () => {
             value: 0.8,
           },
           size: {
-            value: 4,
+            value: 3,
           },
           rotate: {
             value: {
@@ -95,10 +95,10 @@ const Particle = () => {
             },
             bubble: {
               distance: 400,
-              size: 40,
+              size: 10,
               duration: 2,
               opacity: 8,
-              color: "#ffff00",
+              color: "#FFAD69",
             },
             repulse: {
               distance: 200,
