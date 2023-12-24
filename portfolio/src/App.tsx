@@ -1,10 +1,14 @@
-function App() {
+import { Route, Routes } from "react-router-dom";
+import { LandingPage } from "./pages/landingpage";
 
+function App() {
   return (
-    <div className="flex justify-center text-[red]">
-      test deployment
-    </div>
-  )
+    <>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
