@@ -3,7 +3,7 @@ import Particle from "../components/Particle";
 
 export function LandingPage() {
   const openResume = () => {
-    const resumeURL = `${import.meta.env.BASE_URL}/Resume.pdf`;
+    const resumeURL = `${import.meta.env.BASE_URL}resume.pdf`;
     window.open(resumeURL, "_blank");
   };
   return (

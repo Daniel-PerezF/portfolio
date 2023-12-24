@@ -36,9 +36,11 @@ export function Header() {
         )}
       </div>
       <div className="hidden justify-around w-1/2 sm:hidden lg:flex text-2xl text-white">
-        <h3 className="cursor-pointer hover:underline hover:text-purple-300">
-          Home
-        </h3>
+        <Link to="skills">
+          <h3 className="cursor-pointer hover:underline hover:text-purple-300">
+            Home
+          </h3>
+        </Link>
         <h3 className="cursor-pointer hover:underline hover:text-purple-300">
           Skills
         </h3>
@@ -78,7 +80,7 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
               Home
             </Link>
 
-            <a>Skills</a>
+            <Link to="skills">Skills</Link>
             <a>Work</a>
             <a>Contact</a>
           </div>
