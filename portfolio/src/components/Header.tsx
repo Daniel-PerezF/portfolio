@@ -36,14 +36,17 @@ export function Header() {
         )}
       </div>
       <div className="hidden justify-around w-1/2 sm:hidden lg:flex text-2xl text-white">
-        <Link to="skills">
+        <Link to="/">
           <h3 className="cursor-pointer hover:underline hover:text-purple-300">
             Home
           </h3>
         </Link>
-        <h3 className="cursor-pointer hover:underline hover:text-purple-300">
-          Skills
-        </h3>
+        <Link to="skills">
+          <h3 className="cursor-pointer hover:underline hover:text-purple-300">
+            Skills
+          </h3>
+        </Link>
+
         <h3 className="cursor-pointer hover:underline hover:text-purple-300">
           Work
         </h3>
