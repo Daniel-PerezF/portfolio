@@ -41,7 +41,7 @@ export function Header() {
             Home
           </h3>
         </Link>
-        <Link to="skills">
+        <Link to="/skills">
           <h3 className="cursor-pointer hover:underline hover:text-purple-400">
             Skills
           </h3>
