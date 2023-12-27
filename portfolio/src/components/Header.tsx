@@ -14,7 +14,7 @@ export function Header() {
     setIsOpen(false);
   }
   return (
-    <div className="flex justify-between p-1 relative z-61 ">
+    <div className="flex justify-between p-1 relative z-61">
       <MenuModal isOpen={isOpen} onClose={handleCloseMenu} />
       <Link to="/">
         <img
