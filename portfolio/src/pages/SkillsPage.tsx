@@ -1,9 +1,9 @@
-import { Header } from "../components/Header";
 import { FaReact } from "react-icons/fa";
 import { BackEndSkills, FrontEndSkills, Tools } from "../components/Skills";
 import { FaGear } from "react-icons/fa6";
 import { Footer } from "../components/Footer";
 import { GoTools } from "react-icons/go";
+import { Header } from "../components/Header";
 
 export function SkillsPage() {
   return (
@@ -15,7 +15,6 @@ export function SkillsPage() {
           about my software joureny and how i learned these skills
         </p>
       </div>
-      <hr className="mx-8 mt-4" />
       <div className="flex flex-col gap-2">
         <div className="w-full flex justify-center">
           <div className=" w-full mx-4 pt-2">
@@ -54,6 +53,7 @@ export function SkillsPage() {
           </div>
         </div>
       </div>
+      <hr className="mx-8 mt-4" />
 
       <div className="mt-9">
         <Footer />

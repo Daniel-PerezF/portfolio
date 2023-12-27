@@ -39,6 +39,21 @@ const backSkills = [
     logo: "./postgresql.png",
   },
 ];
+
+const miscTools = [
+  {
+    name: "Node.js",
+    logo: "./node.png",
+  },
+  {
+    name: "Express.js",
+    logo: "./expresslogo.svg",
+  },
+  {
+    name: "PostgreSQL",
+    logo: "./postgresql.png",
+  },
+];
 export function FrontEndSkills() {
   return (
     <div className="flex flex-wrap justify-center">
@@ -78,13 +93,13 @@ export function BackEndSkills() {
 export function Tools() {
   return (
     <div className="flex flex-wrap justify-center">
-      {backSkills.map((skill) => (
-        <div key={skill.name} className="w-[30%] p-2">
+      {miscTools.map((tool) => (
+        <div key={tool.name} className="w-[30%] p-2">
           <div className="w-full h-full p-4 outline outline-white hover:bg-white rounded-md cursor-pointer">
             <img
-              src={skill.logo}
+              src={tool.logo}
               className="w-full h-full object-contain"
-              alt={skill.name}
+              alt={tool.name}
             />
           </div>
         </div>
