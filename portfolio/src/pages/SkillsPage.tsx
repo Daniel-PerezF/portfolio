@@ -2,7 +2,7 @@ import { FaReact } from "react-icons/fa";
 import { BackEndSkills, FrontEndSkills, Tools } from "../components/Skills";
 import { FaGear } from "react-icons/fa6";
 import { Footer } from "../components/Footer";
-import { GoTools } from "react-icons/go";
+import { FaTools } from "react-icons/fa";
 import { Header } from "../components/Header";
 
 export function SkillsPage() {
@@ -45,8 +45,8 @@ export function SkillsPage() {
       <div className="w-full flex justify-center">
         <div className="w-full mx-4 pt-2">
           <div className="flex gap-4 justify-center">
-            <GoTools className="text-5xl text-white" />
-            <h3 className="text-3xl text-white self-center">Tools</h3>
+            <FaTools className="text-5xl text-white " />
+            <h3 className="text-3xl text-white self-center">Misc Tools</h3>
           </div>
           <div>
             <Tools />
