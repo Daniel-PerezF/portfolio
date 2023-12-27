@@ -1,57 +1,97 @@
 const frontSkills = [
   {
     name: "JavaScript",
-    logo: "./jslogo.png",
+    logo: "./logos/js-logo.png",
   },
   {
     name: "HTML5",
-    logo: "./htmllogo.png",
+    logo: "./logos/html-logo.png",
   },
   {
     name: "CSS3",
-    logo: "./csslogo.png",
+    logo: "./logos/css-logo.png",
   },
   {
     name: "React",
-    logo: "./reacticon.png",
+    logo: "./logos/react-logo.png",
   },
   {
     name: "TailWindCSS",
-    logo: "./tailwind.png",
+    logo: "./logos/tailwind-logo.png",
   },
   {
     name: "TypeScript",
-    logo: "./typescript.png",
+    logo: "./logos/typescript-logo.png",
   },
 ];
 
 const backSkills = [
   {
     name: "Node.js",
-    logo: "./node.png",
+    logo: "./logos/node-logo.png",
   },
   {
     name: "Express.js",
-    logo: "./expresslogo.svg",
+    logo: "./logos/express-logo.svg",
   },
   {
     name: "PostgreSQL",
-    logo: "./postgresql.png",
+    logo: "./logos/postgresql-logo.png",
   },
 ];
 
 const miscTools = [
   {
-    name: "Node.js",
-    logo: "./node.png",
+    name: "AWS",
+    logo: "./logos/aws-logo.png",
   },
   {
-    name: "Express.js",
-    logo: "./expresslogo.svg",
+    name: "Git",
+    logo: "./logos/git-logo.png",
   },
   {
-    name: "PostgreSQL",
-    logo: "./postgresql.png",
+    name: "GitHub",
+    logo: "./logos/github-logo.png",
+  },
+  {
+    name: "JWT",
+    logo: "./logos/jwt-logo.svg",
+  },
+  {
+    name: "NPM",
+    logo: "./logos/npm-logo.png",
+  },
+  {
+    name: "React Router",
+    logo: "./logos/react-router-logo.png",
+  },
+  {
+    name: "Vite",
+    logo: "./logos/vite-logo.png",
+  },
+  {
+    name: "Canva",
+    logo: "./logos/canva-logo.png",
+  },
+  {
+    name: "Figma",
+    logo: "./logos/figma-logo.png",
+  },
+  {
+    name: "ESLint",
+    logo: "./logos/eslint-logo.png",
+  },
+  {
+    name: "Docker",
+    logo: "./logos/docker-logo.png",
+  },
+  {
+    name: "Visual Studio Code",
+    logo: "./logos/vscode-logo.png",
+  },
+  {
+    name: "Slack",
+    logo: "./logos/slack-logo.png",
   },
 ];
 export function FrontEndSkills() {

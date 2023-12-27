@@ -18,7 +18,7 @@ export function Header() {
       <MenuModal isOpen={isOpen} onClose={handleCloseMenu} />
       <Link to="/">
         <img
-          src={`${import.meta.env.BASE_URL}/Daniel.png`}
+          src={`${import.meta.env.BASE_URL}/DP-icon.png`}
           className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px]"
         />
       </Link>
