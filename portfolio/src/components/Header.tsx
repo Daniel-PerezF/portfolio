@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenuUnfoldLine } from "react-icons/ri";
 import { RiMenu3Fill } from "react-icons/ri";
-import { MenuModalProps } from "../Types/types";
+import { MenuModalProps } from "../constants/types";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,23 +37,23 @@ export function Header() {
       </div>
       <div className="hidden justify-around w-1/2 sm:hidden lg:flex text-2xl text-white">
         <Link to="/">
-          <h3 className="cursor-pointer hover:underline hover:text-purple-400">
+          <h3 className="cursor-pointer hover:underline hover:text-[orange]">
             Home
           </h3>
         </Link>
         <Link to="/skills">
-          <h3 className="cursor-pointer hover:underline hover:text-purple-400">
+          <h3 className="cursor-pointer hover:underline hover:text-[orange]">
             Skills
           </h3>
         </Link>
 
         <Link to="/projects">
-          <h3 className="cursor-pointer hover:underline hover:text-purple-400">
+          <h3 className="cursor-pointer hover:underline hover:text-[orange]">
             Projects
           </h3>
         </Link>
 
-        <h3 className="cursor-pointer hover:underline hover:text-purple-400">
+        <h3 className="cursor-pointer hover:underline hover:text-[orange]">
           Contact
         </h3>
       </div>

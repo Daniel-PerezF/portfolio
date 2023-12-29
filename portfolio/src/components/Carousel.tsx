@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
-import { CarouselProps } from "../Types/types";
+import { CarouselProps } from "../constants/types";
 
 export function Carousel({ items }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,8 +18,8 @@ export function Carousel({ items }: CarouselProps) {
   };
 
   return (
-    <div className="flex ">
-      <button onClick={prevSlide} className="text-white text-5xl">
+    <div className="flex w-full">
+      <button onClick={prevSlide} className="text-white text-3xl lg:text-5xl">
         <IoMdArrowDropleft className="hover:translate-x-[-4px] transition ease-in-out" />
       </button>
       <div>
@@ -32,7 +32,7 @@ export function Carousel({ items }: CarouselProps) {
           </div>
         ))}
       </div>
-      <button onClick={nextSlide} className="text-white text-5xl">
+      <button onClick={nextSlide} className="text-white text-3xl lg:text-5xl">
         <IoMdArrowDropright className="hover:translate-x-[4px] transition ease-in-out" />
       </button>
     </div>
