@@ -26,10 +26,7 @@ export function Carousel({ items }: CarouselProps) {
         {items.map((item, index) => (
           <div
             key={index}
-            style={{
-              display: index === currentIndex ? "block" : "none",
-              border: "1px solid black",
-            }}
+            className={` ${index === currentIndex ? "block" : "hidden"}`}
           >
             {item}
           </div>
