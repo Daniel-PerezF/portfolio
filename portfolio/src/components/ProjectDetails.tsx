@@ -1,6 +1,6 @@
 import { Carousel } from "./Carousel";
-import { projects } from "./MyProjects";
 import { useParams } from "react-router-dom";
+import { projects } from "./projects";
 
 export function ProjectDetails() {
   const { projectKey } = useParams();
