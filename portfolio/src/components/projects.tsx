@@ -9,45 +9,45 @@ export const projects = [
     ],
     features: [
       {
-        ft: "Sign In / Sign Out",
-        desc: "Users can create an account and sign in / sign out, users can also sign in as a guest.",
+        ft: "User Authentication",
+        desc: "Securely create an account, sign in, or explore the platform as a guest with the power of JSON Web Tokens (JWT) and argon2 for user verification.",
       },
       {
-        ft: "List Items for Sale",
-        desc: "Users can post their own vinyl records for sale",
+        ft: "Vinyl Marketplace",
+        desc: "Users can post their vinyl records for sale, complete with image uploads to showcase their collection. The marketplace allows users to browse and purchase records from fellow collectors.",
       },
 
       {
-        ft: "Add to Cart",
-        desc: "Users can add items to their cart.",
+        ft: "Shopping Cart Functionality",
+        desc: "Enhance the shopping experience by adding and removing items from the cart, providing users with a flexible and convenient way to curate their vinyl selections.",
+      },
+
+      {
+        ft: "Checkout Functionality",
+        desc: "Seamlessly proceed to checkout, allowing users to purchase their desired vinyl records and navigate to a mock order confirmation page for a satisfying transaction experience.",
       },
       {
-        ft: "Remove from Cart",
-        desc: "Users can remove items from their cart.",
+        ft: "Genre Filtering",
+        desc: "Easily navigate the catalog by filtering records based on genre preferences, ensuring a personalized and efficient browsing experience.",
       },
       {
-        ft: "Users can Checkout",
-        desc: 'Users can checkout and "purchase" items which redirects them to a mock confirmation page.',
+        ft: "Seller Management",
+        desc: "Sellers have the autonomy to manage their listings by editing active posts or removing items they've posted, offering a dynamic and responsive selling environment.",
       },
       {
-        ft: "Filter by Genre",
-        desc: "Users can filter available records by genre.",
-      },
-      {
-        ft: "Delete Listing",
-        desc: "Sellers can delete items they have posted for sale.",
-      },
-      {
-        ft: "Edit Listing",
-        desc: "Sellers can edit current listings they have for sale.",
+        ft: "Mobile Responsiveness",
+        desc: "Enjoy Spin Trade on the go! The platform is designed to provide a seamless and optimized experience across various mobile devices, ensuring that vinyl enthusiasts can trade and celebrate their passion for music anytime, anywhere.",
       },
     ],
     live: "http://recordmarketplace-dev.us-west-1.elasticbeanstalk.com/",
     github: "https://github.com/Daniel-PerezF/RecordMarketplace",
     about:
       "A full stack web application for vinyl collectors to buy and sell records.",
-    fullDesc: "",
-    tech: [""],
+    fullDesc:
+      "Spin Trade is a dynamic and immersive full-stack web application tailored for vinyl enthusiasts, offering a seamless marketplace experience for buying and selling vinyl records. Crafted as my final project during my time at LearningFuze, the coding bootcamp I attended, this platform showcases my skills in utilizing cutting-edge technologies to deliver a robust and user-friendly experience.",
+    tech: [
+      "React.js, TypeScript, Tailwind CSS, Node.js, Express.js, PostgreSQL, AWS Elastic Beanstalk, JWT, Argon2",
+    ],
   },
   {
     name: "Ghibli Wiki",
@@ -88,6 +88,6 @@ export const projects = [
       "A front end web application for Studio Ghibli fans to view information about films as well as create a favorites and watchlist.",
     fullDesc:
       "Ghibli Wiki is a front-end application tailored for Studio Ghibli enthusiasts, providing a platform to explore the entire catalog of Studio Ghibli films. This project was initiated during the junior phase at LearningFuze, the coding bootcamp I attended, and has since undergone a transformation using React.js, TypeScript, and Tailwind CSS.",
-    tech: ["React.js, TypeScript, Tailwind CSS"],
+    tech: ["React.js, TypeScript, Tailwind CSS, Local Storage"],
   },
 ];

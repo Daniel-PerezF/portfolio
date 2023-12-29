@@ -60,7 +60,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-9">
+      <div className="mt-9 text-sm font-light">
         <h3>
           © 2023. All Rights Reserved. <br /> Made in California by Daniel
           Perez.
