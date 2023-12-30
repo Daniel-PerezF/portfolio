@@ -99,6 +99,8 @@ export const projects = [
   {
     name: "Spin Trade",
     key: "spin-trade",
+    mainImg: "./project-images/spin-trade-mac.png",
+
     imgs: [
       "./project-images/spin-trade-landing.png",
       "./project-images/spin-trade-home.png",
@@ -150,6 +152,7 @@ export const projects = [
   {
     name: "Ghibli Wiki",
     key: "ghibli-wiki",
+    mainImg: "./project-images/ghibli-wiki-mac.png",
     imgs: [
       "./project-images/ghibli-wiki-home.png",
       "./project-images/ghibli-wiki-film.png",
@@ -183,7 +186,7 @@ export const projects = [
     live: "https://daniel-perezf.github.io/ghibli-wiki/#/",
     github: "https://github.com/Daniel-PerezF/ghibli-wiki",
     about:
-      "A front end web application for Studio Ghibli fans to view information about films as well as create a favorites and watchlist.",
+      "A front end web application for Studio Ghibli fans to view information about films.",
     fullDesc:
       "Ghibli Wiki is a front-end application tailored for Studio Ghibli enthusiasts, providing a platform to explore the entire catalog of Studio Ghibli films. This project was initiated during the junior phase at LearningFuze, the coding bootcamp I attended, and has since undergone a transformation using React.js, TypeScript, and Tailwind CSS.",
     tech: ["React.js, TypeScript, Tailwind CSS, Local Storage"],

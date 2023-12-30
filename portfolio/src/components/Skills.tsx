@@ -6,7 +6,7 @@ export function FrontEndSkills() {
       {frontSkills.map((skill) => (
         <div
           key={skill.name}
-          className="w-32 p-2 lg:w-42 md:w-40 group relative"
+          className="w-24 p-2 xl:w-32 lg:w-28 group relative"
         >
           <div className="relative w-full h-full">
             <div className="w-full h-full p-4 outline outline-white rounded-md ">
@@ -17,7 +17,9 @@ export function FrontEndSkills() {
               />
             </div>
             <div className="absolute inset-0 flex items-center justify-center bg-black opacity-0 transition-opacity group-hover:opacity-65 rounded-md">
-              <p className="text-white text-lg font-bold">{skill.name}</p>
+              <p className="text-white font-bold lg:text-lg text-xs text-center">
+                {skill.name}
+              </p>
             </div>
           </div>
         </div>
@@ -32,7 +34,7 @@ export function BackEndSkills() {
       {backSkills.map((skill) => (
         <div
           key={skill.name}
-          className="w-32 p-2 lg:w-42 md:w-40 group relative"
+          className="w-24 p-2 xl:w-32 lg:w-28 group relative"
         >
           <div className="relative w-full h-full">
             <div className="w-full h-full p-4 outline outline-white rounded-md ">
@@ -43,7 +45,9 @@ export function BackEndSkills() {
               />
             </div>
             <div className="absolute inset-0 flex items-center justify-center bg-black opacity-0 transition-opacity group-hover:opacity-65 rounded-md">
-              <p className="text-white text-lg font-bold">{skill.name}</p>
+              <p className="text-white lg:text-lg text-xs font-bold text-center">
+                {skill.name}
+              </p>
             </div>
           </div>
         </div>
@@ -58,7 +62,7 @@ export function Tools() {
       {miscTools.map((tool) => (
         <div
           key={tool.name}
-          className="w-32 p-2 lg:w-42 md:w-40 group relative"
+          className="w-24 p-2 xl:w-32 lg:w-28 group relative"
         >
           <div className="relative w-full h-full p-4 outline outline-white rounded-md ">
             <img
@@ -67,7 +71,9 @@ export function Tools() {
               alt={tool.name}
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black opacity-0 transition-opacity group-hover:opacity-65 rounded-md">
-              <p className="text-white text-lg font-bold">{tool.name}</p>
+              <p className="text-white lg:text-lg  text-xs font-bold text-center">
+                {tool.name}
+              </p>
             </div>
           </div>
         </div>

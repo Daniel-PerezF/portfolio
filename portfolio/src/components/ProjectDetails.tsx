@@ -36,7 +36,7 @@ export function ProjectDetails() {
             <p>{`>`}</p>
             <Link
               to="/projects"
-              className="hover:text-[orange] transition ease-in-out"
+              className="hover:text-[orange] transition ease-in-out "
             >
               Projects
             </Link>
@@ -49,7 +49,7 @@ export function ProjectDetails() {
               <img
                 key={imgIndex}
                 src={img}
-                className="w-full rounded"
+                className="w-full rounded-md"
                 alt={`Project ${project.name} Image ${imgIndex + 1}`}
               />
             ))}
@@ -62,7 +62,7 @@ export function ProjectDetails() {
           <Link
             to={project.github}
             target="_blank"
-            className="flex gap-2 hover:text-purple-400 transition ease-in-out "
+            className="flex gap-2 hover:text-purple-400 transition ease-in-out delay-100"
           >
             <FaCode />
             <p className="text-sm">Open Code</p>
@@ -70,7 +70,7 @@ export function ProjectDetails() {
           <Link
             to={project.live}
             target="_blank"
-            className="flex gap-2 hover:text-purple-400 transition ease-in-out"
+            className="flex gap-2 hover:text-purple-400 transition ease-in-out delay-100"
           >
             <IoIosLink />
             <p className="text-sm ">Open Site</p>
@@ -102,27 +102,6 @@ export function ProjectDetails() {
         <hr className="mx-4 my-4 lg:w-1/2" />
       </div>
 
-      {/* <div className="px-4 pb-4 text-white lg:w-full lg:flex lg:justify-center">
-        <div className="flex gap-4 lg:w-1/2">
-          <Link
-            to={project.github}
-            target="_blank"
-            className="flex gap-2 hover:text-purple-400 transition ease-in-out "
-          >
-            <FaCode />
-            <p className="text-sm">Open Code</p>
-          </Link>
-          <Link
-            to={project.live}
-            target="_blank"
-            className="flex gap-2 hover:text-purple-400 transition ease-in-out"
-          >
-            <IoIosLink />
-            <p className="text-sm ">Open Site</p>
-          </Link>
-        </div>
-      </div> */}
-
       <div className="mx-4 text-white my-4 lg:w-full lg:flex lg:justify-center">
         <div className="w-full lg:w-1/2 lg:justify-start lg:flex lg:mx-12">
           <h3 className="font-semibold text-[orange]">Key Features</h3>
@@ -134,7 +113,9 @@ export function ProjectDetails() {
           {project.features.map((feature, index) => (
             <div key={index} className="py-1 text-white">
               <button
-                className="w-full text-left p-2 bg-gray-800 text-white hover:outline transition ease-in-out lg:text-[1.1rem] flex justify-between"
+                className={`w-full text-left p-2 bg-gray-800 text-white hover:outline transition ease-in-out lg:text-[1.1rem] flex justify-between ${
+                  openAccordionIndex === index ? "outline " : ""
+                }`}
                 onClick={() =>
                   setOpenAccordionIndex(
                     openAccordionIndex === index ? null : index
@@ -150,7 +131,11 @@ export function ProjectDetails() {
               </button>
 
               {openAccordionIndex === index && (
-                <div className="p-2 text-[0.92rem] lg:text-base">
+                <div
+                  className={`p-2 text-[0.92rem] lg:text-base ${
+                    openAccordionIndex === index ? " " : ""
+                  } `}
+                >
                   {feature.desc}
                 </div>
               )}

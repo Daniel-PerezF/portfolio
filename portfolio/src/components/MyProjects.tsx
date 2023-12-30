@@ -1,25 +1,32 @@
+// MyProjects.tsx
+
 import { Link } from "react-router-dom";
 import { projects } from "../constants/data";
 
 export function MyProjects() {
   return (
     <div className="w-full justify-center flex">
-      <div className="flex flex-wrap">
+      <div className="flex mb-24 flex-wrap justify-center lg:w-4/5 md:w-3/4">
         {projects.map((project, index) => (
-          <div key={index} className="p-4 rounded-md mb-4 w-full lg:w-1/2">
-            <div className="w-full flex justify-center items-center flex-col text-white">
-              <div className="w-[24rem] lg:w-[28rem]">
+          <div
+            key={index}
+            className="p-4 rounded-md mb-4 w-full lg:w-1/2 md:w-full sm:w-full"
+          >
+            <div className="lg:w-3/4 w-full flex justify-center flex-col m-auto">
+              <div className="w-full lg:max-w-[28rem]">
                 <Link to={`/projects/${project.key}`}>
                   <img
-                    src={project.imgs[0]}
-                    className="w-full rounded"
+                    src={project.mainImg}
+                    className="w-full rounded hover:outline hover:outline-white hover:outline-offset-4"
                     alt={`Project ${project.name} img`}
                   />
                 </Link>
               </div>
-              <h3 className="text-2xl">{project.name}</h3>
-              <div className="w-full lg:w-1/2 md:w-1/2">
-                <p className="text-center lg:text-left">{project.about}</p>
+              <div className="w-full lg:max-w-[28rem] text-white mt-4">
+                <h3 className="text-2xl">{project.name}</h3>
+                <p className="text-left text-sm lg:text-sm xl:text-base">
+                  {project.about}
+                </p>
               </div>
             </div>
           </div>
