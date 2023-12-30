@@ -103,9 +103,17 @@ export const projects = [
 
     imgs: [
       "./project-images/spin-trade-landing.png",
-      "./project-images/spin-trade-home.png",
-      "./project-images/spin-trade-record.png",
+      "./project-images/spin-trade-all.png",
+      "./project-images/spin-trade-genre.png",
+      "./project-images/spin-trade-details.png",
+      "./project-images/spin-trade-checkout.png",
       "./project-images/spin-trade-cart.png",
+      "./project-images/spin-trade-confirmation.png",
+      "./project-images/spin-trade-sign-in.png",
+      "./project-images/spin-trade-create.png",
+      "./project-images/spin-trade-listing.png",
+      "./project-images/spin-trade-dashboard.png",
+      "./project-images/spin-trade-dashboard-details.png",
     ],
     features: [
       {
@@ -155,7 +163,11 @@ export const projects = [
     mainImg: "./project-images/ghibli-wiki-mac.png",
     imgs: [
       "./project-images/ghibli-wiki-home.png",
-      "./project-images/ghibli-wiki-film.png",
+      "./project-images/ghibli-wiki-details.png",
+      "./project-images/ghibli-wiki-nav.png",
+      "./project-images/ghibli-wiki-about.png",
+      "./project-images/ghibli-wiki-favorites.png",
+      "./project-images/ghibli-wiki-watchlist.png",
     ],
     features: [
       {

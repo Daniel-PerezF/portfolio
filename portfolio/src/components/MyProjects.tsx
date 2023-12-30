@@ -1,5 +1,3 @@
-// MyProjects.tsx
-
 import { Link } from "react-router-dom";
 import { projects } from "../constants/data";
 
@@ -17,7 +15,7 @@ export function MyProjects() {
                 <Link to={`/projects/${project.key}`}>
                   <img
                     src={project.mainImg}
-                    className="w-full rounded hover:outline hover:outline-white hover:outline-offset-4"
+                    className="w-full rounded hover:outline hover:outline-white hover:outline-offset-1 hover:outline-2"
                     alt={`Project ${project.name} img`}
                   />
                 </Link>
