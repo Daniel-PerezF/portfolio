@@ -10,3 +10,8 @@
   width: 100%;
   z-index: -1;
 }
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

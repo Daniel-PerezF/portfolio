@@ -2,15 +2,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-// export function Footer() {
-//   return (
-//     <div className="text-white p-4">
-//       <h3>
-//         © 2023. All Rights Reserved <br /> Made in California by Daniel Perez
-//       </h3>
-//     </div>
-//   );
-// }
 export function Footer() {
   function handleClick() {
     const emailAddress = "danielperezf98@gmail.com";
@@ -36,7 +27,12 @@ export function Footer() {
             <Link to="/skills" className="hover:underline hover:text-slate-300">
               Skills
             </Link>
-            <h3 className="hover:underline hover:text-slate-300">Work</h3>
+            <Link
+              to="/projects"
+              className="hover:underline hover:text-slate-300"
+            >
+              Projects
+            </Link>
             <h3 className="hover:underline hover:text-slate-300"> Contact</h3>
           </div>
         </div>
@@ -64,7 +60,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-9">
+      <div className="mt-9 text-sm font-light">
         <h3>
           © 2023. All Rights Reserved. <br /> Made in California by Daniel
           Perez.

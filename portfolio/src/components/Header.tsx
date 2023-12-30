@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenuUnfoldLine } from "react-icons/ri";
 import { RiMenu3Fill } from "react-icons/ri";
-import { MenuModalProps } from "../Types/types";
+import { MenuModalProps } from "../constants/types";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,22 +37,17 @@ export function Header() {
       </div>
       <div className="hidden justify-around w-1/2 sm:hidden lg:flex text-2xl text-white">
         <Link to="/">
-          <h3 className="cursor-pointer hover:underline hover:text-purple-400">
-            Home
-          </h3>
+          <h3 className="cursor-pointer  hover:text-[orange]">Home</h3>
         </Link>
         <Link to="/skills">
-          <h3 className="cursor-pointer hover:underline hover:text-purple-400">
-            Skills
-          </h3>
+          <h3 className="cursor-pointer  hover:text-[orange]">Skills</h3>
         </Link>
 
-        <h3 className="cursor-pointer hover:underline hover:text-purple-400">
-          Work
-        </h3>
-        <h3 className="cursor-pointer hover:underline hover:text-purple-400">
-          Contact
-        </h3>
+        <Link to="/projects">
+          <h3 className="cursor-pointer  hover:text-[orange]">Projects</h3>
+        </Link>
+
+        <h3 className="cursor-pointer  hover:text-[orange]">Contact</h3>
       </div>
     </div>
   );
@@ -74,21 +69,32 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
         }`}
       >
         <div className="flex justify-between h-full pt-[2rem]">
-          <div className="flex flex-col gap-20 max-w-[25%] text-xl underline">
+          <div className="flex flex-col gap-20 max-w-[25%] text-xl ">
             <Link
               to="/"
-              className="hover:text-purple-300 ease-in-out delay-75 text-slate-200"
+              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
               onClick={onClose}
             >
-              Home
+              // Home
             </Link>
 
-            <Link to="skills" className="text-slate-200" onClick={onClose}>
-              Skills
+            <Link
+              to="/skills"
+              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+              onClick={onClose}
+            >
+              // Skills
             </Link>
-            <a className="text-slate-200">Work</a>
-            <a className="text-slate-200">Contact</a>
-          </div>
+            <Link
+              to="/projects"
+              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+            >
+              // Projects
+            </Link>
+            <a className="hover:text-[orange] ease-in-out delay-75 text-slate-200">
+              // Contact
+            </a>
+          </div>{" "}
         </div>
       </div>
     </div>
