@@ -115,6 +115,22 @@ export const projects = [
       "./project-images/spin-trade-dashboard.png",
       "./project-images/spin-trade-dashboard-details.png",
     ],
+    mobileImgs: [
+      "./project-images/spin-trade-home-mobile.png",
+      "./project-images/spin-trade-create-mobile.png",
+      "./project-images/spin-trade-sign-in-mobile.png",
+      "./project-images/spin-trade-all-mobile.png",
+      "./project-images/spin-trade-genre-mobile.png",
+      "./project-images/spin-trade-details-mobile.png",
+      "./project-images/spin-trade-details-2-mobile.png",
+      "./project-images/spin-trade-cart-mobile.png",
+      "./project-images/spin-trade-checkout-mobile.png",
+      "./project-images/spin-trade-confirmation-mobile.png",
+      "./project-images/spin-trade-listing-mobile.png",
+      "./project-images/spin-trade-listing-2-mobile.png",
+      "./project-images/spin-trade-seller-mobile.png",
+      "./project-images/spin-trade-seller-details-mobile.png",
+    ],
     features: [
       {
         ft: "User Authentication",
@@ -168,6 +184,15 @@ export const projects = [
       "./project-images/ghibli-wiki-about.png",
       "./project-images/ghibli-wiki-favorites.png",
       "./project-images/ghibli-wiki-watchlist.png",
+    ],
+    mobileImgs: [
+      "./project-images/ghibli-wiki-home-mobile.png",
+      "./project-images/ghibli-wiki-details-mobile.png",
+      "./project-images/ghibli-wiki-favorites-mobile.png",
+      "./project-images/ghibli-wiki-details-2-mobile.png",
+      "./project-images/ghibli-wiki-watchlist-mobile.png",
+      "./project-images/ghibli-wiki-nav-mobile.png",
+      "./project-images/ghibli-wiki-about-mobile.png",
     ],
     features: [
       {

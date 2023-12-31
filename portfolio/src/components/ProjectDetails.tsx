@@ -6,6 +6,9 @@ import { IoIosLink } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup } from "react-icons/io";
 import { projects } from "../constants/data";
+import { CiMobile3 } from "react-icons/ci";
+import { RiMacbookLine } from "react-icons/ri";
+import { HiOutlineEmojiSad } from "react-icons/hi";
 
 export function ProjectDetails() {
   const { projectKey } = useParams();
@@ -13,10 +16,15 @@ export function ProjectDetails() {
   const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(
     null
   );
+  const [view, setView] = useState("desktop");
 
   if (!project) {
     return <div>Project not found</div>;
   }
+
+  const toggleView = () => {
+    setView(view === "mobile" ? "desktop" : "mobile");
+  };
 
   return (
     <div className="min-h-screen bg-inherit">
@@ -44,16 +52,42 @@ export function ProjectDetails() {
             <p>{project.name}</p>
           </div>
 
-          <Carousel
-            items={project.imgs.map((img, imgIndex) => (
-              <img
-                key={imgIndex}
-                src={img}
-                className="w-full rounded-md"
-                alt={`Project ${project.name} Image ${imgIndex + 1}`}
-              />
-            ))}
-          />
+          {view === "desktop" ? (
+            <Carousel
+              items={project.imgs.map((img, imgIndex) => (
+                <img
+                  key={imgIndex}
+                  src={img}
+                  className="w-full rounded-md"
+                  alt={`Project ${project.name} Image ${imgIndex + 1}`}
+                />
+              ))}
+            />
+          ) : project.mobileImgs && project.mobileImgs.length > 0 ? (
+            <div className="flex justify-center">
+              <div className="">
+                <Carousel
+                  items={project.mobileImgs.map((img, imgIndex) => (
+                    <div key={imgIndex}>
+                      <img
+                        src={img}
+                        className="w-full rounded-md "
+                        alt={`Project ${project.name} Image ${imgIndex + 1}`}
+                      />
+                    </div>
+                  ))}
+                />
+              </div>
+            </div>
+          ) : (
+            <div className="text-purple-400 flex gap-2 px-2 justify-center lg:my-[14.45rem] my-[6.38rem] text-sm lg:text-lg font-bold ">
+              <div className="flex mt-1">
+                <HiOutlineEmojiSad />
+              </div>
+
+              <h3>Sorry no mobile images available for this project</h3>
+            </div>
+          )}
         </div>
       </div>
 
@@ -73,8 +107,17 @@ export function ProjectDetails() {
             className="flex gap-2 hover:text-purple-400 transition ease-in-out delay-100"
           >
             <IoIosLink />
-            <p className="text-sm ">Open Site</p>
+            <p className="text-sm">Open Site</p>
           </Link>
+          <div
+            className="flex gap-2 hover:text-purple-400 transition ease-in-out delay-100 cursor-pointer"
+            onClick={toggleView}
+          >
+            {view === "mobile" ? <RiMacbookLine /> : <CiMobile3 />}
+            <h3 className="text-sm ">
+              {view === "mobile" ? "View Desktop" : "View Mobile"}
+            </h3>{" "}
+          </div>
         </div>
       </div>
 
