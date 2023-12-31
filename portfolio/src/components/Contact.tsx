@@ -53,7 +53,7 @@ export function Contact() {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="flex flex-col w-full mb-24 lg:mb-40"
+            className="flex flex-col w-full mb-16 lg:mb-30"
           >
             <div className="flex">
               <div className="w-1/2 pr-2">

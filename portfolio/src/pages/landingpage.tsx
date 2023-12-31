@@ -1,4 +1,4 @@
-import { Header } from "../components/Header";
+// import { Header } from "../components/Header";
 import Particle from "../components/Particle";
 
 export function LandingPage() {
@@ -7,9 +7,9 @@ export function LandingPage() {
     window.open(resumeURL, "_blank");
   };
   return (
-    <div className="h-screen">
+    <div className="h-screen ">
       <Particle />
-      <Header />
+
       <div className="flex justify-center pt-24 pb-4 ">
         <div className="w-full flex justify-center">
           <div className="w-64 h-64 lg:w-[25rem] lg:h-[25rem] sm:w-64 sm:h-64 md:w-72 md:h-72 overflow-hidden">

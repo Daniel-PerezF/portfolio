@@ -1,6 +1,8 @@
 import { Carousel } from "./Carousel";
 import { Link, useParams } from "react-router-dom";
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+import { useEffect, useState } from "react";
 import { FaCode } from "react-icons/fa";
 import { IoIosLink } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -12,11 +14,16 @@ import { HiOutlineEmojiSad } from "react-icons/hi";
 
 export function ProjectDetails() {
   const { projectKey } = useParams();
+  const navigate = useNavigate();
   const project = projects.find((p) => p.key === projectKey);
   const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(
     null
   );
   const [view, setView] = useState("desktop");
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -37,17 +44,18 @@ export function ProjectDetails() {
           <div className="flex gap-2 text-white text-sm font-light ml-12 mb-2  ">
             <Link
               to="/"
-              className=" hover:text-[orange] transition ease-in-out"
+              onClick={() => (window.location.href = "/")}
+              className="hover:text-[orange] transition ease-in-out"
             >
               Home
             </Link>
             <p>{`>`}</p>
-            <Link
-              to="/projects"
-              className="hover:text-[orange] transition ease-in-out "
+            <span
+              className="hover:text-[orange] cursor-pointer transition ease-in-out"
+              onClick={() => navigate(-1)} // Use navigate with -1 to go back
             >
               Projects
-            </Link>
+            </span>
             <p>{`>`}</p>
             <p>{project.name}</p>
           </div>

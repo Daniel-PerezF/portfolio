@@ -13,6 +13,7 @@ export function MyProjects() {
             <div className="lg:w-3/4 w-full flex justify-center flex-col m-auto">
               <div className="w-full lg:max-w-[28rem]">
                 <Link to={`/projects/${project.key}`}>
+                  {/* Wrap the project image with Link */}
                   <img
                     src={project.mainImg}
                     className="w-full rounded hover:outline hover:outline-white hover:outline-offset-1 hover:outline-2"
@@ -21,7 +22,10 @@ export function MyProjects() {
                 </Link>
               </div>
               <div className="w-full lg:max-w-[28rem] text-white mt-4">
-                <h3 className="text-2xl">{project.name}</h3>
+                {/* Wrap the project name with Link */}
+                <Link to={`/projects/${project.key}`}>
+                  <h3 className="text-2xl">{project.name}</h3>
+                </Link>
                 <p className="text-left text-sm lg:text-sm xl:text-base">
                   {project.about}
                 </p>
