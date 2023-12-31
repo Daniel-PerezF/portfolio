@@ -26,15 +26,26 @@ export function Contact() {
   };
 
   return (
-    <div>
+    <div className="">
       <div className="flex flex-col justify-center items-center text-white gap-4">
         <h3 className="text-4xl md:text-4xl lg:text-5xl">Lets Chat!</h3>
         <div className="w-full flex justify-center py-4 xl:mr-[4rem] lg:mr-0">
           <p className="px-2 w-full lg:w-1/2 lg:px-12 text-center md:w-3/4 text-[0.95rem] lg:text-base xl:text-lg">
-            Feel free to reach out via email or direct message on Linkedin,
-            always happy to have a chat!
+            Feel free to reach out via email or direct message on{" "}
+            <a
+              href="https://www.linkedin.com/in/daniel-f-perez/"
+              target="_blank"
+              className="text-blue-500 hover:underline"
+            >
+              Linkedin
+            </a>
+            , always happy to have a chat!
           </p>
         </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center text-white gap-4">
+        <div className="w-full flex justify-around py-4 xl:mr-[4rem] lg:mr-0"></div>
       </div>
 
       <div className="flex w-full justify-center">
@@ -42,7 +53,7 @@ export function Contact() {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="flex flex-col w-full"
+            className="flex flex-col w-full mb-24 lg:mb-40"
           >
             <div className="flex">
               <div className="w-1/2 pr-2">
@@ -82,7 +93,15 @@ export function Contact() {
 
             <label className="text-white">Message</label>
             <textarea name="message" rows={4} required className="mb-4 p-2" />
-            <input type="submit" value="Send" />
+            <div className="w-full flex justify-end">
+              <button
+                type="submit"
+                value="Send"
+                className="border px-4 py-1 w-full lg:w-1/4 text-white font-medium bg-[#1F2937] border-none hover:text-[orange] transition ease-in-out hover:outline hover:outline-[orange] hover:outline-1 "
+              >
+                Send!
+              </button>
+            </div>
           </form>
         </div>
       </div>
