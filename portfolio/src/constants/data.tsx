@@ -99,18 +99,18 @@ export const projects = [
   {
     name: "Spin Trade",
     key: "spin-trade",
-    mainImg: "./project-images/spin-trade-mac.png",
+    mainImg: "./project-images/spin-trade-landing.png",
 
     imgs: [
-      "./project-images/spin-trade-landing.png",
+      "./project-images/spin-trade-home.png",
+      "./project-images/spin-trade-create.png",
+      "./project-images/spin-trade-sign-in.png",
       "./project-images/spin-trade-all.png",
       "./project-images/spin-trade-genre.png",
       "./project-images/spin-trade-details.png",
-      "./project-images/spin-trade-checkout.png",
       "./project-images/spin-trade-cart.png",
+      "./project-images/spin-trade-checkout.png",
       "./project-images/spin-trade-confirmation.png",
-      "./project-images/spin-trade-sign-in.png",
-      "./project-images/spin-trade-create.png",
       "./project-images/spin-trade-listing.png",
       "./project-images/spin-trade-dashboard.png",
       "./project-images/spin-trade-dashboard-details.png",
