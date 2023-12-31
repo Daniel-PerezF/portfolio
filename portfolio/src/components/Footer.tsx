@@ -33,7 +33,12 @@ export function Footer() {
             >
               Projects
             </Link>
-            <h3 className="hover:underline hover:text-slate-300"> Contact</h3>
+            <Link
+              to="/contact"
+              className="hover:underline hover:text-slate-300"
+            >
+              Contact
+            </Link>
           </div>
         </div>
         <div>

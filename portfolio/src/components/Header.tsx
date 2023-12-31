@@ -47,7 +47,9 @@ export function Header() {
           <h3 className="cursor-pointer  hover:text-[orange]">Projects</h3>
         </Link>
 
-        <h3 className="cursor-pointer  hover:text-[orange]">Contact</h3>
+        <Link to="/contact">
+          <h3 className="cursor-pointer  hover:text-[orange]">Contact</h3>
+        </Link>
       </div>
     </div>
   );
@@ -88,12 +90,17 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
             <Link
               to="/projects"
               className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+              onClick={onClose}
             >
               // Projects
             </Link>
-            <a className="hover:text-[orange] ease-in-out delay-75 text-slate-200">
+            <Link
+              to="/contact"
+              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+              onClick={onClose}
+            >
               // Contact
-            </a>
+            </Link>
           </div>{" "}
         </div>
       </div>
