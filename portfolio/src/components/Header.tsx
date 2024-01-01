@@ -133,7 +133,7 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
               Contact
             </ScrollLink>
           </div>
-          <div className="mt-9 text-[0.698rem] font-light lg:text-sm leading-5 text-white">
+          <div className="mt-9 text-[0.65rem] font-light lg:text-sm leading-5 text-white pb-4">
             <h3>© 2024. All Rights Reserved.</h3>
           </div>
         </div>
