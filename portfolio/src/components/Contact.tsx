@@ -53,7 +53,7 @@ export function Contact() {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="flex flex-col w-full mb-16 lg:mb-30"
+            className="flex flex-col w-full mb-16 lg:mb-30 "
           >
             <div className="flex">
               <div className="w-1/2 pr-2">
@@ -87,7 +87,11 @@ export function Contact() {
               </div>
               <div className="w-1/2 pl-2">
                 <label className="text-white">Linkedin (Optional)</label>
-                <input type="text" name="subject" className="mb-4 p-2 w-full" />
+                <input
+                  type="text"
+                  name="linkedin"
+                  className="mb-4 p-2 w-full"
+                />
               </div>
             </div>
 

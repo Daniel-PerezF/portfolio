@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { ContactPage } from "./ContactPage";
@@ -6,9 +7,33 @@ import { ProjectsPage } from "./ProjectsPage";
 import { SkillsPage } from "./SkillsPage";
 
 export function SinglePage() {
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Set showScrollToTop to true when the user scrolls down, false otherwise
+      setShowScrollToTop(window.scrollY > window.innerHeight / 2);
+    };
+
+    // Attach the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
-      <div className="fixed w-full  z-[1000]">
+      <div className="fixed w-full z-[1000]">
         <Header />
       </div>
 
@@ -33,9 +58,6 @@ export function SinglePage() {
         <ProjectsPage />
       </div>
 
-      {/* Project Details Section */}
-      {/* Add similar sections for project details, contact, etc. */}
-
       {/* Contact Section */}
       <div
         className="contact-section pb-20 pt-[22%] lg:pt-4 bg-[#364652]"
@@ -43,6 +65,18 @@ export function SinglePage() {
       >
         <ContactPage />
       </div>
+
+      {/* Scroll to Top Button */}
+      {showScrollToTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-[#1F2937] text-white p-2 rounded-full cursor-pointer"
+        >
+          Scroll to Top
+        </button>
+      )}
+
+      <Footer />
     </div>
   );
 }
