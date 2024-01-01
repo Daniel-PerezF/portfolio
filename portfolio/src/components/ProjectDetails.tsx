@@ -42,11 +42,7 @@ export function ProjectDetails() {
       <div className="w-full flex justify-center mb-4">
         <div className="w-full lg:w-1/2">
           <div className="flex gap-2 text-white text-sm font-light ml-12 mb-2  ">
-            <Link
-              to="/"
-              onClick={() => (window.location.href = "/")}
-              className="hover:text-[orange] transition ease-in-out"
-            >
+            <Link to="/" className="hover:text-[orange] transition ease-in-out">
               Home
             </Link>
             <p>{`>`}</p>
