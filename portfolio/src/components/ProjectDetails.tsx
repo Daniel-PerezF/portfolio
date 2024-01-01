@@ -34,7 +34,7 @@ export function ProjectDetails() {
   };
 
   return (
-    <div className="min-h-screen bg-inherit">
+    <div className="min-h-screen bg-inherit pb-20">
       <h2 className="text-4xl text-white flex justify-center my-4 lg:text-6xl font-bold">
         {project.name}
       </h2>

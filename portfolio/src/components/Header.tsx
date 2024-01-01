@@ -22,7 +22,7 @@ export function Header() {
       <ScrollLink to="landing-section">
         <img
           src={`${import.meta.env.BASE_URL}/DP-icon.png`}
-          className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px]"
+          className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px] cursor-pointer"
         />
       </ScrollLink>
       <div className="lg:hidden">

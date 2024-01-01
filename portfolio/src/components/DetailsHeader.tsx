@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 export function DetailsHeader() {
   return (
     <div className="flex justify-between p-1 relative z-61">
-      <Link to="/" onClick={() => (window.location.href = "/")}>
+      <Link to="/">
         <img
           src={`${import.meta.env.BASE_URL}/DP-icon.png`}
-          className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px]"
+          className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px] cursor-pointer"
         />
       </Link>
 
