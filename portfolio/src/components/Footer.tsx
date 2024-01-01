@@ -1,6 +1,9 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
+
+import { Link as ScrollLink } from "react-scroll";
 
 export function Footer() {
   function handleClick() {
@@ -21,19 +24,39 @@ export function Footer() {
         <div>
           <h3 className="underline">Site Map</h3>
           <div className="flex flex-col items-center">
-            <Link to="/" className="hover:underline hover:text-slate-300">
-              Home
-            </Link>
-            <Link to="/skills" className="hover:underline hover:text-slate-300">
-              Skills
-            </Link>
-            <Link
-              to="/projects"
-              className="hover:underline hover:text-slate-300"
+            <ScrollLink
+              to="landing-section"
+              smooth={true}
+              duration={500}
+              onClick={scrollToTop}
             >
-              Projects
-            </Link>
-            <h3 className="hover:underline hover:text-slate-300"> Contact</h3>
+              <h3 className="cursor-pointer  hover:text-[orange]">Home</h3>
+            </ScrollLink>
+
+            <ScrollLink
+              to="skills-page"
+              smooth={true}
+              duration={500}
+              offset={-110}
+            >
+              <h3 className="cursor-pointer  hover:text-[orange]">Skills</h3>
+            </ScrollLink>
+            <ScrollLink
+              to="projects-page"
+              smooth={true}
+              duration={500}
+              offset={-50}
+            >
+              <h3 className="cursor-pointer  hover:text-[orange]">Projects</h3>
+            </ScrollLink>
+            <ScrollLink
+              to="contact-page"
+              smooth={true}
+              duration={500}
+              offset={-110}
+            >
+              <h3 className="cursor-pointer  hover:text-[orange]">Contact</h3>
+            </ScrollLink>
           </div>
         </div>
         <div>
@@ -60,10 +83,11 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-9 text-sm font-light">
+      <div className="mt-9 text-xs font-light lg:text-sm leading-5">
         <h3>
-          © 2023. All Rights Reserved. <br /> Made in California by Daniel
-          Perez.
+          © 2024. All Rights Reserved. <br /> Made in California by Daniel
+          Perez. <br /> Built using React, TypeScript, Tailwind and GitHub
+          Pages.
         </h3>
       </div>
     </div>

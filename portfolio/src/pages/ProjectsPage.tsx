@@ -1,11 +1,10 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+// import { Footer } from "../components/Footer";
+// import { Header } from "../components/Header";
 import { MyProjects } from "../components/MyProjects";
 
 export function ProjectsPage() {
   return (
     <div className="min-h-screen bg-[#364652]">
-      <Header />
       <div className="flex flex-col justify-center items-center text-white gap-4">
         <h3 className="text-4xl md:text-4xl lg:text-5xl">Projects</h3>
         <div className="w-full flex justify-center py-4 xl:mr-[4rem] lg:mr-0">
@@ -17,7 +16,7 @@ export function ProjectsPage() {
         </div>
       </div>
       <MyProjects />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

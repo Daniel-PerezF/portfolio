@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { RiMenuUnfoldLine } from "react-icons/ri";
 import { RiMenu3Fill } from "react-icons/ri";
+import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 import { MenuModalProps } from "../constants/types";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
   function handleMenuClick() {
     setIsOpen(!isOpen);
   }
@@ -13,15 +15,16 @@ export function Header() {
   function handleCloseMenu() {
     setIsOpen(false);
   }
+
   return (
     <div className="flex justify-between p-1 relative z-61">
       <MenuModal isOpen={isOpen} onClose={handleCloseMenu} />
-      <Link to="/">
+      <ScrollLink to="landing-section">
         <img
           src={`${import.meta.env.BASE_URL}/DP-icon.png`}
           className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px]"
         />
-      </Link>
+      </ScrollLink>
       <div className="lg:hidden">
         {!isOpen ? (
           <RiMenu3Fill
@@ -36,22 +39,39 @@ export function Header() {
         )}
       </div>
       <div className="hidden justify-around w-1/2 sm:hidden lg:flex text-2xl text-white">
-        <Link to="/">
+        {/* Add onClick handlers to trigger smooth scrolling */}
+        <ScrollLink
+          to="landing-section"
+          smooth={true}
+          duration={500}
+          onClick={scrollToTop}
+        >
           <h3 className="cursor-pointer  hover:text-[orange]">Home</h3>
-        </Link>
-        <Link to="/skills">
+        </ScrollLink>
+        <ScrollLink to="skills-page" smooth={true} duration={500} offset={-110}>
           <h3 className="cursor-pointer  hover:text-[orange]">Skills</h3>
-        </Link>
-
-        <Link to="/projects">
+        </ScrollLink>
+        <ScrollLink
+          to="projects-page"
+          smooth={true}
+          duration={500}
+          offset={-50}
+        >
           <h3 className="cursor-pointer  hover:text-[orange]">Projects</h3>
-        </Link>
-
-        <h3 className="cursor-pointer  hover:text-[orange]">Contact</h3>
+        </ScrollLink>
+        <ScrollLink
+          to="contact-page"
+          smooth={true}
+          duration={500}
+          offset={-110}
+        >
+          <h3 className="cursor-pointer  hover:text-[orange]">Contact</h3>
+        </ScrollLink>
       </div>
     </div>
   );
 }
+
 function MenuModal({ isOpen, onClose }: MenuModalProps) {
   return (
     <div
@@ -70,30 +90,43 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
       >
         <div className="flex justify-between h-full pt-[2rem]">
           <div className="flex flex-col gap-20 max-w-[25%] text-xl ">
-            <Link
-              to="/"
+            <ScrollLink
               className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+              to="landing-section"
+              smooth={true}
+              duration={500}
               onClick={onClose}
             >
               // Home
-            </Link>
+            </ScrollLink>
 
-            <Link
-              to="/skills"
+            <ScrollLink
+              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+              onClick={onClose}
+              to="skills-page"
+              smooth={true}
+              duration={500}
+            >
+              // Skills
+            </ScrollLink>
+            <ScrollLink
+              to="projects-page"
+              smooth={true}
+              duration={500}
               className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
               onClick={onClose}
             >
-              // Skills
-            </Link>
-            <Link
-              to="/projects"
-              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
-            >
               // Projects
-            </Link>
-            <a className="hover:text-[orange] ease-in-out delay-75 text-slate-200">
+            </ScrollLink>
+            <ScrollLink
+              to="contact-page"
+              smooth={true}
+              duration={500}
+              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+              onClick={onClose}
+            >
               // Contact
-            </a>
+            </ScrollLink>
           </div>{" "}
         </div>
       </div>
