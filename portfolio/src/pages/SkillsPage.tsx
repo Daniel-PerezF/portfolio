@@ -7,9 +7,9 @@ import { FaTools } from "react-icons/fa";
 
 export function SkillsPage() {
   return (
-    <div className="bg-[#364652] min-h-screen">
+    <div className="bg-[#364652] min-h-screen pt-[8rem]">
       <div className="flex flex-col justify-center items-center text-white gap-4">
-        <h3 className="text-3xl md:text-4xl lg:text-5xl">Skills</h3>
+        <h3 className="text-4xl md:text-4xl lg:text-5xl">Skills</h3>
         <div className="w-full flex justify-center py-4">
           <p className="px-2 w-[98%] lg:w-[74%] xl:w-3/5  lg:px-12 text-center text-[0.95rem] lg:text-base xl:text-lg">
             I developed my software skills at LearningFuze, a leading coding

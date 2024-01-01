@@ -5,7 +5,7 @@ export function DetailsHeader() {
     <div className="flex justify-between p-1 relative z-61">
       <Link to="/">
         <img
-          src={`${import.meta.env.BASE_URL}/DP-icon.png`}
+          src={`${import.meta.env.BASE_URL}/orange-icon.png`}
           className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px] cursor-pointer"
         />
       </Link>

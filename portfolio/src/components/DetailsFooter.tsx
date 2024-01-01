@@ -1,11 +1,12 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
-import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
+import { Link, useNavigate } from "react-router-dom";
 
-import { Link as ScrollLink } from "react-scroll";
-
-export function Footer() {
+export function DetailsFooter() {
+  const navigate = useNavigate();
+  function handleGoBack() {
+    navigate(-1);
+  }
   function handleMailClick() {
     const emailAddress = "danielperezf98@gmail.com";
     const subject = "Lets Connect!";
@@ -18,45 +19,20 @@ export function Footer() {
     // Open the user's default email client
     window.location.href = mailtoLink;
   }
+
   return (
     <div className="text-white p-4 bg-[#232f37]">
       <div className="flex justify-evenly w-full ">
         <div>
-          <h3 className="underline">Site Map</h3>
+          <h3 className="underline">Back To</h3>
           <div className="flex flex-col items-center">
-            <ScrollLink
-              to="landing-section"
-              smooth={true}
-              duration={500}
-              onClick={scrollToTop}
-            >
-              <h3 className="cursor-pointer  hover:text-[#FB904D] ">Home</h3>
-            </ScrollLink>
+            <Link to="/">
+              <h3 className="cursor-pointer  hover:text-[#FB904D]">Home</h3>
+            </Link>
 
-            <ScrollLink
-              to="skills-page"
-              smooth={true}
-              duration={500}
-              offset={-40}
-            >
-              <h3 className="cursor-pointer  hover:text-[#FB904D]">Skills</h3>
-            </ScrollLink>
-            <ScrollLink
-              to="projects-page"
-              smooth={true}
-              duration={500}
-              offset={-50}
-            >
+            <div onClick={handleGoBack}>
               <h3 className="cursor-pointer  hover:text-[#FB904D]">Projects</h3>
-            </ScrollLink>
-            <ScrollLink
-              to="contact-page"
-              smooth={true}
-              duration={500}
-              offset={-110}
-            >
-              <h3 className="cursor-pointer  hover:text-[#FB904D]">Contact</h3>
-            </ScrollLink>
+            </div>
           </div>
         </div>
         <div>

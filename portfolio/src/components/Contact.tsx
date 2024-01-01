@@ -24,6 +24,18 @@ export function Contact() {
       );
     e.currentTarget.reset();
   };
+  function handleMailClick() {
+    const emailAddress = "danielperezf98@gmail.com";
+    const subject = "Lets Connect!";
+    const body = "Hello,\n\nI would like to connect with you...";
+
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Open the user's default email client
+    window.location.href = mailtoLink;
+  }
 
   return (
     <div className="">
@@ -31,11 +43,19 @@ export function Contact() {
         <h3 className="text-4xl md:text-4xl lg:text-5xl">Lets Chat!</h3>
         <div className="w-full flex justify-center py-4 xl:mr-[4rem] lg:mr-0">
           <p className="px-2 w-full lg:w-1/2 lg:px-12 text-center md:w-3/4 text-[0.95rem] lg:text-base xl:text-lg">
-            Feel free to reach out via email or direct message on{" "}
+            Feel free to reach out via {""}
+            <a
+              onClick={handleMailClick}
+              target="_blank"
+              className="text-[#FB904D] hover:underline cursor-pointer"
+            >
+              email {""}
+            </a>
+            or direct message on {""}
             <a
               href="https://www.linkedin.com/in/daniel-f-perez/"
               target="_blank"
-              className="text-blue-500 hover:underline"
+              className="text-[#FB904D] hover:underline "
             >
               Linkedin
             </a>
@@ -62,7 +82,7 @@ export function Contact() {
                   type="text"
                   name="name"
                   required
-                  className="mb-4 p-2 w-full"
+                  className="mb-4 p-2 w-full focus:outline-[#FB904D]"
                 />
               </div>
               <div className="w-1/2 pl-2">
@@ -71,7 +91,7 @@ export function Contact() {
                   type="text"
                   name="subject"
                   required
-                  className="mb-4 p-2 w-full"
+                  className="mb-4 p-2 w-full focus:outline-[#FB904D]"
                 />
               </div>
             </div>
@@ -82,26 +102,31 @@ export function Contact() {
                   type="email"
                   name="email"
                   required
-                  className="mb-4 p-2 w-full"
+                  className="mb-4 p-2 w-full focus:outline-[#FB904D]"
                 />
               </div>
               <div className="w-1/2 pl-2">
-                <label className="text-white">Linkedin (Optional)</label>
+                <label className="text-white ">Linkedin (Optional)</label>
                 <input
                   type="text"
                   name="linkedin"
-                  className="mb-4 p-2 w-full"
+                  className="mb-4 p-2 w-full focus:outline-[#FB904D]"
                 />
               </div>
             </div>
 
             <label className="text-white">Message</label>
-            <textarea name="message" rows={4} required className="mb-4 p-2" />
+            <textarea
+              name="message"
+              rows={4}
+              required
+              className="mb-4 p-2 focus:outline-[#FB904D]"
+            />
             <div className="w-full flex justify-end">
               <button
                 type="submit"
                 value="Send"
-                className="border px-4 py-1 w-full lg:w-1/4 text-white font-medium bg-[#1F2937] border-none hover:text-[orange] transition ease-in-out hover:outline hover:outline-[orange] hover:outline-1 "
+                className="border px-4 py-1 w-full lg:w-1/4 text-white font-medium bg-[#1F2937] border-none hover:text-[#FB904D] transition ease-in-out hover:outline hover:outline-[#FB904D] hover:outline-1 "
               >
                 Send!
               </button>

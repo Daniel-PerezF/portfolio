@@ -17,11 +17,16 @@ export function Header() {
   }
 
   return (
-    <div className="flex justify-between p-1 relative z-61">
+    <div className="flex justify-between p-1 relative z-61 ">
       <MenuModal isOpen={isOpen} onClose={handleCloseMenu} />
-      <ScrollLink to="landing-section">
+      <ScrollLink
+        to="landing-section"
+        smooth={true}
+        duration={500}
+        onClick={scrollToTop}
+      >
         <img
-          src={`${import.meta.env.BASE_URL}/DP-icon.png`}
+          src={`${import.meta.env.BASE_URL}/orange-icon.png`}
           className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px] cursor-pointer"
         />
       </ScrollLink>
@@ -46,10 +51,10 @@ export function Header() {
           duration={500}
           onClick={scrollToTop}
         >
-          <h3 className="cursor-pointer  hover:text-[orange]">Home</h3>
+          <h3 className="cursor-pointer  hover:text-[#FB904D]">Home</h3>
         </ScrollLink>
-        <ScrollLink to="skills-page" smooth={true} duration={500} offset={-110}>
-          <h3 className="cursor-pointer  hover:text-[orange]">Skills</h3>
+        <ScrollLink to="skills-page" smooth={true} duration={500} offset={-10}>
+          <h3 className="cursor-pointer  hover:text-[#FB904D]">Skills</h3>
         </ScrollLink>
         <ScrollLink
           to="projects-page"
@@ -57,7 +62,7 @@ export function Header() {
           duration={500}
           offset={-50}
         >
-          <h3 className="cursor-pointer  hover:text-[orange]">Projects</h3>
+          <h3 className="cursor-pointer  hover:text-[#FB904D]">Projects</h3>
         </ScrollLink>
         <ScrollLink
           to="contact-page"
@@ -65,7 +70,7 @@ export function Header() {
           duration={500}
           offset={-110}
         >
-          <h3 className="cursor-pointer  hover:text-[orange]">Contact</h3>
+          <h3 className="cursor-pointer  hover:text-[#FB904D]">Contact</h3>
         </ScrollLink>
       </div>
     </div>
@@ -88,46 +93,49 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between h-full pt-[2rem]">
+        <div className="flex justify-between h-[90vh] pt-[2rem] flex-col">
           <div className="flex flex-col gap-20 max-w-[25%] text-xl ">
             <ScrollLink
-              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200"
               to="landing-section"
               smooth={true}
               duration={500}
               onClick={onClose}
             >
-              // Home
+              Home
             </ScrollLink>
 
             <ScrollLink
-              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200"
               onClick={onClose}
               to="skills-page"
               smooth={true}
               duration={500}
             >
-              // Skills
+              Skills
             </ScrollLink>
             <ScrollLink
               to="projects-page"
               smooth={true}
               duration={500}
-              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200"
               onClick={onClose}
             >
-              // Projects
+              Projects
             </ScrollLink>
             <ScrollLink
               to="contact-page"
               smooth={true}
               duration={500}
-              className="hover:text-[orange] ease-in-out delay-75 text-slate-200"
+              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200"
               onClick={onClose}
             >
-              // Contact
+              Contact
             </ScrollLink>
-          </div>{" "}
+          </div>
+          <div className="mt-9 text-[0.698rem] font-light lg:text-sm leading-5 text-white">
+            <h3>© 2024. All Rights Reserved.</h3>
+          </div>
         </div>
       </div>
     </div>

@@ -200,6 +200,10 @@ export const projects = [
         desc: "Users can access detailed information for each film, including the original Japanese title, director, producer, release date, run time, and film description.",
       },
       {
+        ft: "API Integration",
+        desc: "Harnessing the power of the Fetch API, Ghibli Wiki dynamically retrieves film information by making calls to the Studio Ghibli API. Notably, the project transitioned from using AJAX to adopting the Fetch API, reflecting a commitment to staying current with modern web development practices and technologies.",
+      },
+      {
         ft: "Interactive Lists",
         desc: "Users can create a list of their favorite films.",
       },

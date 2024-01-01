@@ -11,14 +11,11 @@ export function SinglePage() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Set showScrollToTop to true when the user scrolls down, false otherwise
       setShowScrollToTop(window.scrollY > window.innerHeight / 2);
     };
 
-    // Attach the event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -42,10 +39,7 @@ export function SinglePage() {
       </div>
 
       {/* Skills Section */}
-      <div
-        className="skills-section pb-20 pt-[22%] lg:pt-4 bg-[#364652]"
-        id="skills-page"
-      >
+      <div className="skills-section pb-20   bg-[#364652]" id="skills-page">
         <SkillsPage />
       </div>
 
@@ -69,7 +63,7 @@ export function SinglePage() {
       {showScrollToTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-[#1F2937] text-white p-2 rounded-full cursor-pointer"
+          className=" text-sm fixed bottom-8 right-8 bg-[#1F2937] text-white p-2 rounded-full cursor-pointer  hover:text-[#FB904D] hover:outline hover:outline-2 hover:outline-[#FB904D] "
         >
           Scroll to Top
         </button>

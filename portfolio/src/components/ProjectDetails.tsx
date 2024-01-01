@@ -42,12 +42,15 @@ export function ProjectDetails() {
       <div className="w-full flex justify-center mb-4">
         <div className="w-full lg:w-1/2">
           <div className="flex gap-2 text-white text-sm font-light ml-12 mb-2  ">
-            <Link to="/" className="hover:text-[orange] transition ease-in-out">
+            <Link
+              to="/"
+              className="hover:text-[#FB904D] transition ease-in-out"
+            >
               Home
             </Link>
             <p>{`>`}</p>
             <span
-              className="hover:text-[orange] cursor-pointer transition ease-in-out"
+              className="hover:text-[#FB904D] cursor-pointer transition ease-in-out"
               onClick={() => navigate(-1)} // Use navigate with -1 to go back
             >
               Projects
@@ -134,7 +137,7 @@ export function ProjectDetails() {
 
       <div className="mx-4 text-white my-4 lg:w-full lg:flex lg:flex-col lg:justify-center">
         <div className="w-full lg:w-1/2 lg:justify-center lg:flex lg:mx-12">
-          <h3 className="font-semibold text-[orange]">Technologies</h3>
+          <h3 className="font-semibold text-[#FB904D]">Technologies</h3>
         </div>
 
         <div className="lg:w-full lg:flex lg:justify-center lg:text-[1.1rem]">
@@ -151,7 +154,7 @@ export function ProjectDetails() {
 
       <div className="mx-4 text-white my-4 lg:w-full lg:flex lg:justify-center">
         <div className="w-full lg:w-1/2 lg:justify-start lg:flex lg:mx-12">
-          <h3 className="font-semibold text-[orange]">Key Features</h3>
+          <h3 className="font-semibold text-[#FB904D]">Key Features</h3>
         </div>
       </div>
 
