@@ -37,7 +37,6 @@ export function SinglePage() {
         <Header />
       </div>
 
-      {/* Landing Section */}
       <div className="landing-section" id="landing-page">
         <LandingPage />
       </div>
