@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { ContactPage } from "./ContactPage";
-import { LandingPage } from "./LandingPage";
+import { LandingPage } from "./landingpage";
 import { ProjectsPage } from "./ProjectsPage";
 import { SkillsPage } from "./SkillsPage";
 
