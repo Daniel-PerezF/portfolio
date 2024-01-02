@@ -26,7 +26,7 @@ export function Header() {
         onClick={scrollToTop}
       >
         <img
-          src={`${import.meta.env.BASE_URL}/orange-icon.png`}
+          src={`/orange-icon.png`}
           className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px] cursor-pointer"
         />
       </ScrollLink>

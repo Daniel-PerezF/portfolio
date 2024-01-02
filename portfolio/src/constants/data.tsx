@@ -1,97 +1,97 @@
 export const frontSkills = [
   {
     name: "JavaScript",
-    logo: "./logos/js-logo.png",
+    logo: "/logos/js-logo.png",
   },
   {
     name: "HTML5",
-    logo: "./logos/html-logo.png",
+    logo: "/logos/html-logo.png",
   },
   {
     name: "CSS3",
-    logo: "./logos/css-logo.png",
+    logo: "/logos/css-logo.png",
   },
   {
     name: "React",
-    logo: "./logos/react-logo.png",
+    logo: "/logos/react-logo.png",
   },
   {
     name: "TailWindCSS",
-    logo: "./logos/tailwind-logo.png",
+    logo: "/logos/tailwind-logo.png",
   },
   {
     name: "TypeScript",
-    logo: "./logos/typescript-logo.png",
+    logo: "/logos/typescript-logo.png",
   },
 ];
 
 export const backSkills = [
   {
     name: "Node.js",
-    logo: "./logos/node-logo.png",
+    logo: "/logos/node-logo.png",
   },
   {
     name: "Express.js",
-    logo: "./logos/express-logo.svg",
+    logo: "/logos/express-logo.svg",
   },
   {
     name: "PostgreSQL",
-    logo: "./logos/postgresql-logo.png",
+    logo: "/logos/postgresql-logo.png",
   },
 ];
 
 export const miscTools = [
   {
     name: "AWS",
-    logo: "./logos/aws-logo.png",
+    logo: "/logos/aws-logo.png",
   },
   {
     name: "Git",
-    logo: "./logos/git-logo.png",
+    logo: "/logos/git-logo.png",
   },
   {
     name: "GitHub",
-    logo: "./logos/github-logo.png",
+    logo: "/logos/github-logo.png",
   },
   {
     name: "JWT",
-    logo: "./logos/jwt-logo.svg",
+    logo: "/logos/jwt-logo.svg",
   },
   {
     name: "NPM",
-    logo: "./logos/npm-logo.png",
+    logo: "/logos/npm-logo.png",
   },
   {
     name: "React Router",
-    logo: "./logos/react-router-logo.png",
+    logo: "/logos/react-router-logo.png",
   },
   {
     name: "Vite",
-    logo: "./logos/vite-logo.png",
+    logo: "/logos/vite-logo.png",
   },
   {
     name: "Canva",
-    logo: "./logos/canva-logo.png",
+    logo: "/logos/canva-logo.png",
   },
   {
     name: "Figma",
-    logo: "./logos/figma-logo.png",
+    logo: "/logos/figma-logo.png",
   },
   {
     name: "ESLint",
-    logo: "./logos/eslint-logo.png",
+    logo: "/logos/eslint-logo.png",
   },
   {
     name: "Docker",
-    logo: "./logos/docker-logo.png",
+    logo: "/logos/docker-logo.png",
   },
   {
     name: "Visual Studio Code",
-    logo: "./logos/vscode-logo.png",
+    logo: "/logos/vscode-logo.png",
   },
   {
     name: "Slack",
-    logo: "./logos/slack-logo.png",
+    logo: "/logos/slack-logo.png",
   },
 ];
 
@@ -99,37 +99,37 @@ export const projects = [
   {
     name: "Spin Trade",
     key: "spin-trade",
-    mainImg: "./project-images/spin-trade-landing.png",
+    mainImg: "/project-images/spin-trade-landing.png",
 
     imgs: [
-      "./project-images/spin-trade-home.png",
-      "./project-images/spin-trade-create.png",
-      "./project-images/spin-trade-sign-in.png",
-      "./project-images/spin-trade-all.png",
-      "./project-images/spin-trade-genre.png",
-      "./project-images/spin-trade-details.png",
-      "./project-images/spin-trade-cart.png",
-      "./project-images/spin-trade-checkout.png",
-      "./project-images/spin-trade-confirmation.png",
-      "./project-images/spin-trade-listing.png",
-      "./project-images/spin-trade-dashboard.png",
-      "./project-images/spin-trade-dashboard-details.png",
+      "/project-images/spin-trade-home.png",
+      "/project-images/spin-trade-create.png",
+      "/project-images/spin-trade-sign-in.png",
+      "/project-images/spin-trade-all.png",
+      "/project-images/spin-trade-genre.png",
+      "/project-images/spin-trade-details.png",
+      "/project-images/spin-trade-cart.png",
+      "/project-images/spin-trade-checkout.png",
+      "/project-images/spin-trade-confirmation.png",
+      "/project-images/spin-trade-listing.png",
+      "/project-images/spin-trade-dashboard.png",
+      "/project-images/spin-trade-dashboard-details.png",
     ],
     mobileImgs: [
-      "./project-images/spin-trade-home-mobile.png",
-      "./project-images/spin-trade-create-mobile.png",
-      "./project-images/spin-trade-sign-in-mobile.png",
-      "./project-images/spin-trade-all-mobile.png",
-      "./project-images/spin-trade-genre-mobile.png",
-      "./project-images/spin-trade-details-mobile.png",
-      "./project-images/spin-trade-details-2-mobile.png",
-      "./project-images/spin-trade-cart-mobile.png",
-      "./project-images/spin-trade-checkout-mobile.png",
-      "./project-images/spin-trade-confirmation-mobile.png",
-      "./project-images/spin-trade-listing-mobile.png",
-      "./project-images/spin-trade-listing-2-mobile.png",
-      "./project-images/spin-trade-seller-mobile.png",
-      "./project-images/spin-trade-seller-details-mobile.png",
+      "/project-images/spin-trade-home-mobile.png",
+      "/project-images/spin-trade-create-mobile.png",
+      "/project-images/spin-trade-sign-in-mobile.png",
+      "/project-images/spin-trade-all-mobile.png",
+      "/project-images/spin-trade-genre-mobile.png",
+      "/project-images/spin-trade-details-mobile.png",
+      "/project-images/spin-trade-details-2-mobile.png",
+      "/project-images/spin-trade-cart-mobile.png",
+      "/project-images/spin-trade-checkout-mobile.png",
+      "/project-images/spin-trade-confirmation-mobile.png",
+      "/project-images/spin-trade-listing-mobile.png",
+      "/project-images/spin-trade-listing-2-mobile.png",
+      "/project-images/spin-trade-seller-mobile.png",
+      "/project-images/spin-trade-seller-details-mobile.png",
     ],
     features: [
       {
@@ -176,23 +176,23 @@ export const projects = [
   {
     name: "Ghibli Wiki",
     key: "ghibli-wiki",
-    mainImg: "./project-images/ghibli-wiki-mac.png",
+    mainImg: "/project-images/ghibli-wiki-mac.png",
     imgs: [
-      "./project-images/ghibli-wiki-home.png",
-      "./project-images/ghibli-wiki-details.png",
-      "./project-images/ghibli-wiki-nav.png",
-      "./project-images/ghibli-wiki-about.png",
-      "./project-images/ghibli-wiki-favorites.png",
-      "./project-images/ghibli-wiki-watchlist.png",
+      "/project-images/ghibli-wiki-home.png",
+      "/project-images/ghibli-wiki-details.png",
+      "/project-images/ghibli-wiki-nav.png",
+      "/project-images/ghibli-wiki-about.png",
+      "/project-images/ghibli-wiki-favorites.png",
+      "/project-images/ghibli-wiki-watchlist.png",
     ],
     mobileImgs: [
-      "./project-images/ghibli-wiki-home-mobile.png",
-      "./project-images/ghibli-wiki-details-mobile.png",
-      "./project-images/ghibli-wiki-favorites-mobile.png",
-      "./project-images/ghibli-wiki-details-2-mobile.png",
-      "./project-images/ghibli-wiki-watchlist-mobile.png",
-      "./project-images/ghibli-wiki-nav-mobile.png",
-      "./project-images/ghibli-wiki-about-mobile.png",
+      "/project-images/ghibli-wiki-home-mobile.png",
+      "/project-images/ghibli-wiki-details-mobile.png",
+      "/project-images/ghibli-wiki-favorites-mobile.png",
+      "/project-images/ghibli-wiki-details-2-mobile.png",
+      "/project-images/ghibli-wiki-watchlist-mobile.png",
+      "/project-images/ghibli-wiki-nav-mobile.png",
+      "/project-images/ghibli-wiki-about-mobile.png",
     ],
     features: [
       {
