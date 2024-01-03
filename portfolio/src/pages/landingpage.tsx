@@ -1,13 +1,17 @@
 import { Link as ScrollLink } from "react-scroll";
 import Particle from "../components/Particle";
 import { RiArrowDownDoubleFill } from "react-icons/ri";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 
 export function LandingPage() {
   const openResume = () => {
     const resumeURL = `${import.meta.env.BASE_URL}resume.pdf`;
     window.open(resumeURL, "_blank");
   };
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="h-screen flex flex-col items-center justify-center">

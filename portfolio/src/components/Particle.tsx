@@ -25,64 +25,55 @@ const Particle = () => {
       id="tsparticles"
       particlesLoaded={particlesLoaded}
       options={{
-        name: "Star",
+        name: "Slow",
         particles: {
           number: {
-            value: 10,
+            value: 80,
             density: {
-              enable: false,
+              enable: true,
             },
           },
           color: {
-            value: "#fff",
+            value: "#ffffff",
           },
           shape: {
             type: "circle",
-            options: {
-              star: {
-                sides: 5,
-              },
-            },
           },
           opacity: {
-            value: 0.8,
+            value: 0.5,
           },
           size: {
-            value: 3,
-          },
-          rotate: {
             value: {
-              min: 0,
-              max: 360,
-            },
-            direction: "clockwise",
-            animation: {
-              enable: true,
-              speed: 5,
-              sync: false,
+              min: 1,
+              max: 5,
             },
           },
           links: {
             enable: true,
-            distance: 600,
+            distance: 200,
             color: "#ffffff",
             opacity: 0.4,
-            width: 2,
+            width: 1,
           },
           move: {
             enable: true,
-            speed: 2,
+            speed: 1,
           },
         },
         interactivity: {
           events: {
             onHover: {
               enable: true,
-              mode: "grab",
+              mode: "slow",
+              parallax: {
+                enable: false,
+                force: 60,
+                smooth: 10,
+              },
             },
             onClick: {
               enable: true,
-              mode: "bubble",
+              mode: "push",
             },
           },
           modes: {
@@ -90,15 +81,13 @@ const Particle = () => {
               distance: 400,
               links: {
                 opacity: 1,
-                color: "#f00",
               },
             },
             bubble: {
               distance: 400,
-              size: 10,
+              size: 40,
               duration: 2,
-              opacity: 8,
-              color: "#FFAD69",
+              opacity: 0.8,
             },
             repulse: {
               distance: 200,
@@ -108,6 +97,10 @@ const Particle = () => {
             },
             remove: {
               quantity: 2,
+            },
+            slow: {
+              radius: 100,
+              factor: 3,
             },
           },
         },

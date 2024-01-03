@@ -1,12 +1,8 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export function DetailsFooter() {
-  const navigate = useNavigate();
-  function handleGoBack() {
-    navigate(-1);
-  }
   function handleMailClick() {
     const emailAddress = "danielperezf98@gmail.com";
     const subject = "Lets Connect!";
@@ -29,10 +25,6 @@ export function DetailsFooter() {
             <Link to="/">
               <h3 className="cursor-pointer  hover:text-[#FB904D]">Home</h3>
             </Link>
-
-            <div onClick={handleGoBack}>
-              <h3 className="cursor-pointer  hover:text-[#FB904D]">Projects</h3>
-            </div>
           </div>
         </div>
         <div>
