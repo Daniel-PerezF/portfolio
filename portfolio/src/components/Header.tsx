@@ -93,10 +93,10 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between h-[90vh] pt-[2rem] flex-col">
+        <div className="flex justify-between h-[90vh] pt-[2rem] flex-col ">
           <div className="flex flex-col gap-20 max-w-[25%] text-xl ">
             <ScrollLink
-              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200"
+              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200 "
               to="landing-section"
               smooth={true}
               duration={500}

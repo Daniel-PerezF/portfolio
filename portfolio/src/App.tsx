@@ -7,7 +7,6 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<SinglePage />} />
-
         <Route path="projects/:projectKey" element={<ProjectDetailsPage />} />
       </Routes>
     </>

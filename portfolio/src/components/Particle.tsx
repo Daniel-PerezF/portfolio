@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { Container } from "@tsparticles/engine";
 
-const Particle = () => {
+export const Particle = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -14,15 +13,10 @@ const Particle = () => {
     });
   }, []);
 
-  const particlesLoaded = async (container?: Container) => {
-    console.log(container);
-  };
-
   return init ? (
     <Particles
       className="particles"
       id="tsparticles"
-      particlesLoaded={particlesLoaded}
       options={{
         name: "Slow",
         particles: {
@@ -110,5 +104,3 @@ const Particle = () => {
     />
   ) : null;
 };
-
-export default Particle;
