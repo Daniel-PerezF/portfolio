@@ -33,5 +33,5 @@ body {
 }
 
 .custom-bounce {
-  animation: customBounce 4s 3; /* Adjust the duration as needed */
+  animation: customBounce 4s 4;
 }

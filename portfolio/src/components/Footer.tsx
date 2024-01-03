@@ -86,8 +86,7 @@ export function Footer() {
       <div className="mt-9 text-xs font-light lg:text-sm leading-5">
         <h3>
           © 2024. All Rights Reserved. <br /> Made in California by Daniel
-          Perez. <br /> Built using React, TypeScript, Tailwind and GitHub
-          Pages.
+          Perez. <br />
         </h3>
       </div>
     </div>

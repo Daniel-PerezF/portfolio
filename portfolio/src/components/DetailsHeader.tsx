@@ -10,9 +10,7 @@ export function DetailsHeader() {
         />
       </Link>
 
-      <div className="hidden justify-around w-1/2 sm:hidden lg:flex text-2xl text-white">
-        {/* Add onClick handlers to trigger smooth scrolling */}
-      </div>
+      <div className="hidden justify-around w-1/2 sm:hidden lg:flex text-2xl text-white"></div>
     </div>
   );
 }

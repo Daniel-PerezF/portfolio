@@ -15,13 +15,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="skills" element={<SkillsPage />} />
-        <Route path="projects" element={<ProjectsPage />} />
-        <Route path="projects/:projectKey" element={<ProjectDetailsPage />} />
-        <Route path="contact" element={<ContactPage />} />
-      </Routes> */
-}

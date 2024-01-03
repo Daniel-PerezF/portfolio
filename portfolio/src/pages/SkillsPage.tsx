@@ -1,9 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { BackEndSkills, FrontEndSkills, Tools } from "../components/Skills";
 import { FaGear } from "react-icons/fa6";
-// import { Footer } from "../components/Footer";
 import { FaTools } from "react-icons/fa";
-// import { Header } from "../components/Header";
 
 export function SkillsPage() {
   return (
@@ -63,10 +61,6 @@ export function SkillsPage() {
           </div>
         </div>
       </div>
-
-      {/* <div className="mt-9">
-        <Footer />
-      </div> */}
     </div>
   );
 }

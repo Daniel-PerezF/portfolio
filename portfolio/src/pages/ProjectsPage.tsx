@@ -1,5 +1,3 @@
-// import { Footer } from "../components/Footer";
-// import { Header } from "../components/Header";
 import { MyProjects } from "../components/MyProjects";
 
 export function ProjectsPage() {
@@ -16,7 +14,6 @@ export function ProjectsPage() {
         </div>
       </div>
       <MyProjects />
-      {/* <Footer /> */}
     </div>
   );
 }

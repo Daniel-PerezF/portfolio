@@ -6,7 +6,6 @@ import { Container } from "@tsparticles/engine";
 const Particle = () => {
   const [init, setInit] = useState(false);
 
-  // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
@@ -28,7 +27,7 @@ const Particle = () => {
         name: "Slow",
         particles: {
           number: {
-            value: 80,
+            value: 75,
             density: {
               enable: true,
             },
@@ -45,7 +44,7 @@ const Particle = () => {
           size: {
             value: {
               min: 1,
-              max: 5,
+              max: 3,
             },
           },
           links: {
