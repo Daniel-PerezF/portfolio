@@ -1,4 +1,4 @@
-# Daniel Perez's Portfolio
+# [Daniel Perez's Portfolio](https://danielperez.io)
 
 This repository contains the source code for my personal portfolio website. The website is designed to provide an overview of my work, skills, and projects.
 
