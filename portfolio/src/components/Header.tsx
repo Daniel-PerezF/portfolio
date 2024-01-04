@@ -50,7 +50,6 @@ export function Header() {
           darkMode ? "text-white" : "text-darker"
         }`}
       >
-        {/* Add onClick handlers to trigger smooth scrolling */}
         <ScrollLink
           to="landing-section"
           smooth={true}
@@ -106,11 +105,15 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
       }`}
     >
       <div
-        className="absolute inset-0 bg-black opacity-20"
+        className={`absolute inset-0  slow ${
+          darkMode ? "bg-black opacity-20" : "bg-black opacity-10"
+        }`}
         onClick={onClose}
       ></div>
       <div
-        className={`bg-[#6d7c88dd] px-8 py-1 w-[50%] lg:w-[30%] h-screen fixed right-0 top-20 transform transition-transform ease-in-out duration-300 ${
+        className={`slow ${
+          darkMode ? "bg-[#6d7c88dd] text-white" : "bg-[#cfd6ddd2] text-darker"
+        } px-8 py-1 w-[50%] lg:w-[30%] h-screen fixed right-0 top-20 transform transition-transform ease-in-out duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -119,12 +122,14 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
             <div className="absolute top-[1rem] right-4 transition slow">
               <DarkModeSwitch
                 checked={darkMode}
+                moonColor="white"
+                sunColor="orange"
                 onChange={handleMoon}
                 size={30}
               />
             </div>
             <ScrollLink
-              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200 mt-10"
+              className="hover:text-[#FB904D] ease-in-out delay-75  mt-10"
               to="landing-section"
               smooth={true}
               duration={500}
@@ -134,7 +139,7 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
             </ScrollLink>
 
             <ScrollLink
-              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200"
+              className="hover:text-[#FB904D] ease-in-out delay-75 "
               onClick={onClose}
               to="skills-page"
               smooth={true}
@@ -146,7 +151,7 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
               to="projects-page"
               smooth={true}
               duration={500}
-              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200"
+              className="hover:text-[#FB904D] ease-in-out delay-75 "
               onClick={onClose}
             >
               Projects
@@ -155,7 +160,7 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
               to="contact-page"
               smooth={true}
               duration={500}
-              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200"
+              className="hover:text-[#FB904D] ease-in-out delay-75 "
               onClick={onClose}
             >
               Contact
