@@ -2,10 +2,11 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
-
 import { Link as ScrollLink } from "react-scroll";
+import { useDarkMode } from "../context/useDarkMode";
 
 export function Footer() {
+  const { darkMode } = useDarkMode();
   function handleMailClick() {
     const emailAddress = "danielperezf98@gmail.com";
     const subject = "Lets Connect!";
@@ -19,7 +20,11 @@ export function Footer() {
     window.location.href = mailtoLink;
   }
   return (
-    <div className="text-white p-4 bg-[#232f37]">
+    <div
+      className={`slow ${
+        darkMode ? "bg-[#232f37] text-white " : "bg-[#F2F3F7] text-darker"
+      } p-4 `}
+    >
       <div className="flex justify-evenly w-full ">
         <div>
           <h3 className="underline">Site Map</h3>

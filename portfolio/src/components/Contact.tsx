@@ -1,8 +1,10 @@
 import { FormEvent, useRef } from "react";
 import emailjs from "emailjs-com";
+import { useDarkMode } from "../context/useDarkMode";
 
 export function Contact() {
   const form = useRef<HTMLFormElement | null>(null);
+  const { darkMode } = useDarkMode();
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -39,10 +41,20 @@ export function Contact() {
 
   return (
     <div className="">
-      <div className="flex flex-col justify-center items-center text-white gap-4">
-        <h3 className="text-4xl md:text-4xl lg:text-5xl">Lets Chat!</h3>
+      <div className="flex flex-col justify-center items-center  gap-4">
+        <h3
+          className={`text-4xl md:text-4xl lg:text-5xl ${
+            darkMode ? "text-white" : "text-darker"
+          }`}
+        >
+          Lets Chat!
+        </h3>
         <div className="w-full flex justify-center py-4 xl:mr-[4rem] lg:mr-0">
-          <p className="px-2 w-full lg:w-1/2 lg:px-12 text-center md:w-3/4 text-[0.95rem] lg:text-base xl:text-lg">
+          <p
+            className={`px-2 w-full lg:w-1/2 lg:px-12 text-center md:w-3/4 text-[0.95rem] lg:text-base xl:text-lg ${
+              darkMode ? "text-white" : "text-darker"
+            }`}
+          >
             Feel free to reach out via {""}
             <a
               onClick={handleMailClick}
@@ -64,7 +76,7 @@ export function Contact() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center text-white gap-4">
+      <div className="flex flex-col justify-center items-center  gap-4">
         <div className="w-full flex justify-around py-4 xl:mr-[4rem] lg:mr-0"></div>
       </div>
 
@@ -77,56 +89,76 @@ export function Contact() {
           >
             <div className="flex">
               <div className="w-1/2 pr-2">
-                <label className="text-white ">Name</label>
+                <label className={`${darkMode ? "text-white" : "text-darker"}`}>
+                  Name
+                </label>
                 <input
                   type="text"
                   name="name"
                   required
-                  className="mb-4 p-2 w-full focus:outline-[#FB904D]"
+                  className={`mb-4 p-2 w-full focus:outline-[#FB904D] ${
+                    darkMode ? "" : "outline-dark outline-1 outline"
+                  }`}
                 />
               </div>
-              <div className="w-1/2 pl-2">
-                <label className="text-white">Subject</label>
+              <div
+                className={`w-1/2 pl-2 ${
+                  darkMode ? "text-white" : "text-darker"
+                }`}
+              >
+                <label className="">Subject</label>
                 <input
                   type="text"
                   name="subject"
                   required
-                  className="mb-4 p-2 w-full focus:outline-[#FB904D]"
+                  className={`mb-4 p-2 w-full focus:outline-[#FB904D] ${
+                    darkMode ? "" : "outline-dark outline-1 outline"
+                  }`}
                 />
               </div>
             </div>
-            <div className="flex">
+            <div className={`flex ${darkMode ? "text-white" : "text-darker"}`}>
               <div className="w-1/2 pr-2">
-                <label className="text-white">Email</label>
+                <label className="">Email</label>
                 <input
                   type="email"
                   name="email"
                   required
-                  className="mb-4 p-2 w-full focus:outline-[#FB904D]"
+                  className={`mb-4 p-2 w-full focus:outline-[#FB904D] ${
+                    darkMode ? "" : "outline-dark outline-1 outline"
+                  }`}
                 />
               </div>
               <div className="w-1/2 pl-2">
-                <label className="text-white ">Linkedin (Optional)</label>
+                <label className=" ">Linkedin (Optional)</label>
                 <input
                   type="text"
                   name="linkedin"
-                  className="mb-4 p-2 w-full focus:outline-[#FB904D]"
+                  className={`mb-4 p-2 w-full focus:outline-[#FB904D] ${
+                    darkMode ? "" : "outline-dark outline-1 outline"
+                  }`}
                 />
               </div>
             </div>
 
-            <label className="text-white">Message</label>
+            <label className={`${darkMode ? "text-white" : "text-darker"}`}>
+              Message
+            </label>
             <textarea
               name="message"
               rows={4}
               required
-              className="mb-4 p-2 focus:outline-[#FB904D]"
+              className={`mb-4 p-2 w-full focus:outline-[#FB904D] ${
+                darkMode ? "" : "outline-dark outline-1 outline"
+              }`}
             />
             <div className="w-full flex justify-end">
               <button
                 type="submit"
                 value="Send"
-                className="border px-4 py-1 w-full lg:w-1/4 text-white font-medium bg-[#1F2937] border-none hover:text-[#FB904D] transition ease-in-out hover:outline hover:outline-[#FB904D] hover:outline-1 "
+                className={`border px-4 py-1 w-full lg:w-1/4  font-medium bg-[#1F2937] border-none hover:text-[#FB904D] transition ease-in-out hover:outline hover:outline-[#FB904D] hover:outline-1 ${
+                  darkMode ? "text-white" : "text-white bg-dark"
+                } `}
               >
                 Send!
               </button>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import { useDarkMode } from "../context/useDarkMode";
 
 export const Particle = () => {
   const [init, setInit] = useState(false);
@@ -12,7 +13,7 @@ export const Particle = () => {
       setInit(true);
     });
   }, []);
-
+  const { darkMode } = useDarkMode();
   return init ? (
     <Particles
       className="particles"
@@ -27,7 +28,7 @@ export const Particle = () => {
             },
           },
           color: {
-            value: "#ffffff",
+            value: darkMode ? "#ffffff" : "#364652",
           },
           shape: {
             type: "circle",
@@ -44,7 +45,7 @@ export const Particle = () => {
           links: {
             enable: true,
             distance: 200,
-            color: "#ffffff",
+            color: darkMode ? "#ffffff" : "#364652",
             opacity: 0.4,
             width: 1,
           },
@@ -98,9 +99,11 @@ export const Particle = () => {
           },
         },
         background: {
-          color: "#364652",
+          color: darkMode ? "#364652" : "#FDFFFC",
         },
       }}
     />
   ) : null;
 };
+
+export default Particle;

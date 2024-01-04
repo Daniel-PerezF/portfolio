@@ -4,6 +4,8 @@ import { RiMenuUnfoldLine } from "react-icons/ri";
 import { RiMenu3Fill } from "react-icons/ri";
 import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 import { MenuModalProps } from "../constants/types";
+import { useDarkMode } from "../context/useDarkMode";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +17,7 @@ export function Header() {
   function handleCloseMenu() {
     setIsOpen(false);
   }
-
+  const { darkMode, toggleDarkMode } = useDarkMode();
   return (
     <div className="flex justify-between p-1 relative z-61 ">
       <MenuModal isOpen={isOpen} onClose={handleCloseMenu} />
@@ -43,7 +45,11 @@ export function Header() {
           />
         )}
       </div>
-      <div className="hidden justify-around w-1/2 sm:hidden lg:flex text-2xl text-white">
+      <div
+        className={`hidden justify-end gap-10 w-1/2 sm:hidden lg:flex text-2xl slow ${
+          darkMode ? "text-white" : "text-darker"
+        }`}
+      >
         {/* Add onClick handlers to trigger smooth scrolling */}
         <ScrollLink
           to="landing-section"
@@ -72,12 +78,27 @@ export function Header() {
         >
           <h3 className="cursor-pointer  hover:text-[#FB904D]">Contact</h3>
         </ScrollLink>
+        <div>
+          <DarkModeSwitch
+            style={{ marginBottom: "2rem" }}
+            checked={darkMode}
+            onChange={toggleDarkMode}
+            moonColor="white"
+            sunColor="orange"
+            size={40}
+          />
+        </div>
       </div>
     </div>
   );
 }
 
 function MenuModal({ isOpen, onClose }: MenuModalProps) {
+  const { darkMode, toggleDarkMode } = useDarkMode();
+  function handleMoon() {
+    toggleDarkMode();
+    onClose();
+  }
   return (
     <div
       className={`fixed inset-0 z-50 flex items-center justify-start transition-opacity ${
@@ -95,8 +116,15 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
       >
         <div className="flex justify-between h-[90vh] pt-[2rem] flex-col ">
           <div className="flex flex-col gap-20 max-w-[25%] text-xl ">
+            <div className="absolute top-[1rem] right-4 transition slow">
+              <DarkModeSwitch
+                checked={darkMode}
+                onChange={handleMoon}
+                size={30}
+              />
+            </div>
             <ScrollLink
-              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200 "
+              className="hover:text-[#FB904D] ease-in-out delay-75 text-slate-200 mt-10"
               to="landing-section"
               smooth={true}
               duration={500}

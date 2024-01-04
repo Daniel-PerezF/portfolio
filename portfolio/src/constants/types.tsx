@@ -6,3 +6,7 @@ export type MenuModalProps = {
 export type CarouselProps = {
   items: React.ReactNode[];
 };
+export type DarkModeContextProps = {
+  darkMode: boolean;
+  toggleDarkMode: () => void;
+};

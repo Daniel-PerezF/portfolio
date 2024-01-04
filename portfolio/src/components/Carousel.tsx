@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 import { CarouselProps } from "../constants/types";
+import { useDarkMode } from "../context/useDarkMode";
 
 export function Carousel({ items }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,10 +17,12 @@ export function Carousel({ items }: CarouselProps) {
       prevIndex === 0 ? items.length - 1 : prevIndex - 1
     );
   };
-
+  const { darkMode } = useDarkMode();
   return (
-    <div className="flex w-full">
-      <button onClick={prevSlide} className="text-white text-3xl lg:text-5xl">
+    <div
+      className={`flex w-full slow ${darkMode ? "text-white" : "text-darker"}`}
+    >
+      <button onClick={prevSlide} className=" text-3xl lg:text-5xl">
         <IoMdArrowDropleft className="hover:translate-x-[-4px] transition ease-in-out" />
       </button>
       <div>
@@ -32,7 +35,7 @@ export function Carousel({ items }: CarouselProps) {
           </div>
         ))}
       </div>
-      <button onClick={nextSlide} className="text-white text-3xl lg:text-5xl">
+      <button onClick={nextSlide} className=" text-3xl lg:text-5xl">
         <IoMdArrowDropright className="hover:translate-x-[4px] transition ease-in-out" />
       </button>
     </div>

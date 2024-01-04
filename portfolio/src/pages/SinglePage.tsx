@@ -5,10 +5,12 @@ import { ContactPage } from "./ContactPage";
 import { LandingPage } from "./landingpage";
 import { ProjectsPage } from "./ProjectsPage";
 import { SkillsPage } from "./SkillsPage";
+import { useDarkMode } from "../context/useDarkMode";
+import { BsArrowUpSquareFill } from "react-icons/bs";
 
 export function SinglePage() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
-
+  const { darkMode } = useDarkMode();
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollToTop(window.scrollY > window.innerHeight / 2);
@@ -27,9 +29,14 @@ export function SinglePage() {
       behavior: "smooth",
     });
   };
-
+  const transitionStyles = {
+    transition: "background-color 1s ease-in-out, color 1s ease-in-out",
+  };
   return (
-    <div>
+    <div
+      style={transitionStyles}
+      className={`slow ${darkMode ? "dark" : "light"}`}
+    >
       <div className="fixed w-full z-[1000]">
         <Header />
       </div>
@@ -39,13 +46,20 @@ export function SinglePage() {
       </div>
 
       {/* Skills Section */}
-      <div className="skills-section pb-20   bg-[#364652]" id="skills-page">
+      <div
+        className={`skills-section pb-20 slow ${
+          darkMode ? "bg-dark" : "bg-white"
+        }`}
+        id="skills-page"
+      >
         <SkillsPage />
       </div>
 
       {/* Projects Section */}
       <div
-        className="projects-section pb-20 pt-[22%] lg:pt-4 bg-[#364652]"
+        className={`slow projects-section pb-20 pt-[22%] lg:pt-4 ${
+          darkMode ? "bg-dark" : "bg-white"
+        }`}
         id="projects-page"
       >
         <ProjectsPage />
@@ -53,7 +67,9 @@ export function SinglePage() {
 
       {/* Contact Section */}
       <div
-        className="contact-section pb-20 pt-[22%] lg:pt-4 bg-[#364652]"
+        className={`slow contact-section pb-20 pt-[22%] lg:pt-4 ${
+          darkMode ? "bg-dark" : "bg-white"
+        }`}
         id="contact-page"
       >
         <ContactPage />
@@ -61,12 +77,16 @@ export function SinglePage() {
 
       {/* Scroll to Top Button */}
       {showScrollToTop && (
-        <button
+        <div
           onClick={scrollToTop}
-          className=" text-sm fixed bottom-8 right-8 bg-[#1F2937] text-white p-2 rounded-full cursor-pointer  hover:text-[#FB904D] hover:outline hover:outline-2 hover:outline-[#FB904D] "
+          className={`slow text-[2.8rem] lg:text-6xl fixed bottom-8 right-8 ${
+            darkMode ? "text-darker" : "text-orange"
+          }  p-2 rounded-full cursor-pointer  ${
+            darkMode ? "hover:text-orange" : "hover:text-darker "
+          } `}
         >
-          Scroll to Top
-        </button>
+          <BsArrowUpSquareFill />
+        </div>
       )}
 
       <Footer />

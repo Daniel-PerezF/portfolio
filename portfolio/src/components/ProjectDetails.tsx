@@ -11,10 +11,12 @@ import { projects } from "../constants/data";
 import { CiMobile3 } from "react-icons/ci";
 import { RiMacbookLine } from "react-icons/ri";
 import { HiOutlineEmojiSad } from "react-icons/hi";
+import { useDarkMode } from "../context/useDarkMode";
 
 export function ProjectDetails() {
   const { projectKey } = useParams();
   const navigate = useNavigate();
+  const { darkMode } = useDarkMode();
   const project = projects.find((p) => p.key === projectKey);
   const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(
     null
@@ -34,14 +36,18 @@ export function ProjectDetails() {
   };
 
   return (
-    <div className="min-h-screen bg-inherit pb-20">
-      <h2 className="text-4xl text-white flex justify-center my-4 lg:text-6xl font-bold">
+    <div
+      className={`slow min-h-screen bg-inherit pb-20 ${
+        darkMode ? "bg-dark text-white" : "bg-white text-darker"
+      }`}
+    >
+      <h2 className="text-4xl  flex justify-center my-4 lg:text-6xl font-bold">
         {project.name}
       </h2>
 
       <div className="w-full flex justify-center mb-4">
         <div className="w-full lg:w-1/2">
-          <div className="flex gap-2 text-white text-sm font-light ml-12 mb-2  ">
+          <div className="flex gap-2  text-sm font-light ml-12 mb-2  ">
             <Link
               to="/"
               className="hover:text-[#FB904D] transition ease-in-out"
@@ -98,12 +104,12 @@ export function ProjectDetails() {
         </div>
       </div>
 
-      <div className="px-4 pb-4 text-white lg:w-full lg:flex lg:justify-center">
+      <div className="px-4 pb-4  lg:w-full lg:flex lg:justify-center">
         <div className="flex gap-4 lg:w-1/2">
           <Link
             to={project.github}
             target="_blank"
-            className="flex gap-2 hover:text-purple-400 transition ease-in-out delay-100"
+            className="flex gap-2 hover:text-purple-400 transition ease-in-out "
           >
             <FaCode />
             <p className="text-sm">Open Code</p>
@@ -111,13 +117,13 @@ export function ProjectDetails() {
           <Link
             to={project.live}
             target="_blank"
-            className="flex gap-2 hover:text-purple-400 transition ease-in-out delay-100"
+            className="flex gap-2 hover:text-purple-400 transition ease-in-out "
           >
             <IoIosLink />
             <p className="text-sm">Open Site</p>
           </Link>
           <div
-            className="flex gap-2 hover:text-purple-400 transition ease-in-out delay-100 cursor-pointer"
+            className="flex gap-2 hover:text-purple-400 transition ease-in-out cursor-pointer"
             onClick={toggleView}
           >
             {view === "mobile" ? <RiMacbookLine /> : <CiMobile3 />}
@@ -128,14 +134,14 @@ export function ProjectDetails() {
         </div>
       </div>
 
-      <div className="text-white text-[0.92rem] mx-4 lg:w-full lg:flex lg:justify-center lg:text-[1.1rem]">
+      <div className=" text-[0.92rem] mx-4 lg:w-full lg:flex lg:justify-center lg:text-[1.1rem]">
         <div className="w-full lg:w-1/2">{project.fullDesc}</div>
       </div>
       <div className="w-full lg:flex lg:justify-center">
         <hr className="mx-4 my-4 lg:w-1/2" />
       </div>
 
-      <div className="mx-4 text-white my-4 lg:w-full lg:flex lg:flex-col lg:justify-center">
+      <div className="mx-4  my-4 lg:w-full lg:flex lg:flex-col lg:justify-center">
         <div className="w-full lg:w-1/2 lg:justify-center lg:flex lg:mx-12">
           <h3 className="font-semibold text-[#FB904D]">Technologies</h3>
         </div>
@@ -152,7 +158,7 @@ export function ProjectDetails() {
         <hr className="mx-4 my-4 lg:w-1/2" />
       </div>
 
-      <div className="mx-4 text-white my-4 lg:w-full lg:flex lg:justify-center">
+      <div className="mx-4  my-4 lg:w-full lg:flex lg:justify-center">
         <div className="w-full lg:w-1/2 lg:justify-start lg:flex lg:mx-12">
           <h3 className="font-semibold text-[#FB904D]">Key Features</h3>
         </div>
@@ -161,9 +167,11 @@ export function ProjectDetails() {
       <div className="w-full flex justify-start px-4 pb-9 lg:justify-center">
         <div className="w-full lg:w-1/2">
           {project.features.map((feature, index) => (
-            <div key={index} className="py-1 text-white">
+            <div key={index} className="py-1 ">
               <button
-                className={`w-full text-left p-2 bg-gray-800 text-white hover:outline transition ease-in-out lg:text-[1.1rem] flex justify-between ${
+                className={`w-full text-left p-2 slow ${
+                  darkMode ? "bg-gray-800" : "bg-slate-200"
+                } hover:outline transition ease-in-out lg:text-[1.1rem] flex justify-between ${
                   openAccordionIndex === index ? "outline " : ""
                 }`}
                 onClick={() =>

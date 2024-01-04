@@ -1,8 +1,10 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useDarkMode } from "../context/useDarkMode";
 
 export function DetailsFooter() {
+  const { darkMode } = useDarkMode();
   function handleMailClick() {
     const emailAddress = "danielperezf98@gmail.com";
     const subject = "Lets Connect!";
@@ -17,7 +19,11 @@ export function DetailsFooter() {
   }
 
   return (
-    <div className="text-white p-4 bg-[#232f37]">
+    <div
+      className={`slow p-4  ${
+        darkMode ? " bg-[#232f37] text-white" : "bg-[#F2F3F7] text-darker"
+      }`}
+    >
       <div className="flex justify-evenly w-full ">
         <div>
           <h3 className="underline">Back To</h3>

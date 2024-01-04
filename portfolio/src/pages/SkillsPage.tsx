@@ -2,11 +2,17 @@ import { FaReact } from "react-icons/fa";
 import { BackEndSkills, FrontEndSkills, Tools } from "../components/Skills";
 import { FaGear } from "react-icons/fa6";
 import { FaTools } from "react-icons/fa";
+import { useDarkMode } from "../context/useDarkMode";
 
 export function SkillsPage() {
+  const { darkMode } = useDarkMode();
   return (
-    <div className="bg-[#364652] min-h-screen pt-[8rem]">
-      <div className="flex flex-col justify-center items-center text-white gap-4">
+    <div
+      className={`slow ${darkMode ? "bg-dark" : "bg-white"} ${
+        darkMode ? "text-white" : "text-darker"
+      } min-h-screen pt-[8rem]`}
+    >
+      <div className="flex flex-col justify-center items-center  gap-4">
         <h3 className="text-4xl md:text-4xl lg:text-5xl">Skills</h3>
         <div className="w-full flex justify-center py-4">
           <p className="px-2 w-[98%] lg:w-[74%] xl:w-3/5  lg:px-12 text-center text-[0.95rem] lg:text-base xl:text-lg">
@@ -21,10 +27,8 @@ export function SkillsPage() {
         <div className="w-full flex justify-center">
           <div className=" w-full mx-4 pt-2">
             <div className="flex gap-4 justify-center">
-              <FaReact className="text-4xl text-white mb-4 " />
-              <h3 className="text-3xl text-white self-center mb-4">
-                Front End
-              </h3>
+              <FaReact className="text-4xl  mb-4 " />
+              <h3 className="text-3xl  self-center mb-4">Front End</h3>
             </div>
             <div>
               <FrontEndSkills />
@@ -37,8 +41,8 @@ export function SkillsPage() {
         <div className="w-full flex justify-center">
           <div className="w-full mx-4 pt-2">
             <div className="flex gap-4 justify-center">
-              <FaGear className="text-4xl text-white mb-4" />
-              <h3 className="text-3xl text-white self-center mb-4">Back End</h3>
+              <FaGear className="text-4xl  mb-4" />
+              <h3 className="text-3xl  self-center mb-4">Back End</h3>
             </div>
             <div>
               <BackEndSkills />
@@ -53,8 +57,8 @@ export function SkillsPage() {
       <div className="w-full flex justify-center">
         <div className="w-full mx-4 pt-2">
           <div className="flex gap-4 justify-center">
-            <FaTools className="text-4xl text-white mb-4 mt-1" />
-            <h3 className="text-3xl text-white self-center mb-4">Misc Tools</h3>
+            <FaTools className="text-4xl  mb-4 mt-1" />
+            <h3 className="text-3xl  self-center mb-4">Misc Tools</h3>
           </div>
           <div>
             <Tools />
