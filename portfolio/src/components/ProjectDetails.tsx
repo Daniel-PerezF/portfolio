@@ -1,7 +1,7 @@
 import { Carousel } from "./Carousel";
 import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-
+import { IoIosArrowDropup } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { FaCode } from "react-icons/fa";
 import { IoIosLink } from "react-icons/io";
@@ -35,10 +35,16 @@ export function ProjectDetails() {
     setView(view === "mobile" ? "desktop" : "mobile");
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div
-      className={`slow min-h-screen bg-inherit pb-20 ${
-        darkMode ? "bg-dark text-white" : "bg-white text-darker"
+      className={`slow min-h-screen pb-20 ${
+        darkMode ? "bg-dark text-white" : "bg-[#EBEBEB] text-darker"
       }`}
     >
       <h2 className="text-4xl  flex justify-center my-4 lg:text-6xl font-bold">
@@ -170,7 +176,7 @@ export function ProjectDetails() {
             <div key={index} className="py-1 ">
               <button
                 className={`w-full text-left p-2 slow ${
-                  darkMode ? "bg-gray-800" : "bg-slate-200"
+                  darkMode ? "bg-gray-800" : "bg-slate-300"
                 } hover:outline transition ease-in-out lg:text-[1.1rem] flex justify-between ${
                   openAccordionIndex === index ? "outline " : ""
                 }`}
@@ -202,7 +208,13 @@ export function ProjectDetails() {
         </div>
       </div>
 
-      <div></div>
+      <div
+        className={`flex flex-col items-center cursor-pointer`}
+        onClick={scrollToTop}
+      >
+        <IoIosArrowDropup className={`text-3xl`} />
+        <h3>Back to Top</h3>
+      </div>
     </div>
   );
 }

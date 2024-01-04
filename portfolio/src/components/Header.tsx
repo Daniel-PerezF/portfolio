@@ -19,7 +19,7 @@ export function Header() {
   }
   const { darkMode, toggleDarkMode } = useDarkMode();
   return (
-    <div className="flex justify-between p-1 relative z-61 ">
+    <div className="flex justify-between p-1 relative z-61 pt-3">
       <MenuModal isOpen={isOpen} onClose={handleCloseMenu} />
       <ScrollLink
         to="landing-section"
@@ -77,14 +77,13 @@ export function Header() {
         >
           <h3 className="cursor-pointer  hover:text-[#FB904D]">Contact</h3>
         </ScrollLink>
-        <div>
+        <div className="hover:translate-y-[3px] transition ease-in-out">
           <DarkModeSwitch
-            style={{ marginBottom: "2rem" }}
             checked={darkMode}
             onChange={toggleDarkMode}
             moonColor="white"
             sunColor="orange"
-            size={40}
+            size={30}
           />
         </div>
       </div>
@@ -117,7 +116,7 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between h-[90vh] pt-[2rem] flex-col ">
+        <div className="flex justify-between h-[90vh] pt-[2rem] flex-col">
           <div className="flex flex-col gap-20 max-w-[25%] text-xl ">
             <div className="absolute top-[1rem] right-4 transition slow">
               <DarkModeSwitch
@@ -125,7 +124,7 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
                 moonColor="white"
                 sunColor="orange"
                 onChange={handleMoon}
-                size={30}
+                size={35}
               />
             </div>
             <ScrollLink

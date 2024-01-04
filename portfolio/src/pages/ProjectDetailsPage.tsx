@@ -11,7 +11,7 @@ export function ProjectDetailsPage() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className={`h-screen slow ${darkMode ? "bg-dark" : "bg-white"}`}>
+    <div className={`h-screen slow ${darkMode ? "bg-dark" : "bg-[#EBEBEB]"}`}>
       <DetailsHeader />
       <ProjectDetails />
       <DetailsFooter />

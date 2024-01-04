@@ -6,8 +6,8 @@ export function DetailsHeader() {
   const { darkMode, toggleDarkMode } = useDarkMode();
   return (
     <div
-      className={`slow flex justify-between p-1 relative z-61 ${
-        darkMode ? "bg-dark" : "dark-white"
+      className={`slow flex justify-between p-1 relative z-61 pt-3 ${
+        darkMode ? "bg-dark" : "bg-[#EBEBEB]"
       }`}
     >
       <Link to="/">
@@ -16,7 +16,7 @@ export function DetailsHeader() {
           className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px] cursor-pointer"
         />
       </Link>
-      <div className="absolute top-[1rem] right-4">
+      <div className="absolute top-[0.7rem] right-1">
         <DarkModeSwitch
           checked={darkMode}
           onChange={toggleDarkMode}

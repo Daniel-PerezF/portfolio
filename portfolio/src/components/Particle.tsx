@@ -99,7 +99,7 @@ export const Particle = () => {
           },
         },
         background: {
-          color: darkMode ? "#364652" : "#FDFFFC",
+          color: darkMode ? "#364652" : "#EBEBEB",
         },
       }}
     />

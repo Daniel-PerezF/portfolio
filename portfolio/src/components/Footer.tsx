@@ -22,7 +22,7 @@ export function Footer() {
   return (
     <div
       className={`slow ${
-        darkMode ? "bg-[#232f37] text-white " : "bg-[#F2F3F7] text-darker"
+        darkMode ? "bg-[#232f37] text-white " : "bg-dark text-white"
       } p-4 `}
     >
       <div className="flex justify-evenly w-full ">

@@ -6,7 +6,7 @@ export function ProjectsPage() {
   return (
     <div
       className={`min-h-screen slow  ${
-        darkMode ? "bg-dark text-white" : "bg-white text-darker"
+        darkMode ? "bg-dark text-white" : "bg-[#EBEBEB] text-darker"
       } `}
     >
       <div className="flex flex-col justify-center items-center gap-4">

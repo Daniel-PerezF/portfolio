@@ -6,7 +6,7 @@ import { LandingPage } from "./landingpage";
 import { ProjectsPage } from "./ProjectsPage";
 import { SkillsPage } from "./SkillsPage";
 import { useDarkMode } from "../context/useDarkMode";
-import { BsArrowUpSquareFill } from "react-icons/bs";
+import { IoIosArrowDropup } from "react-icons/io";
 
 export function SinglePage() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -48,7 +48,7 @@ export function SinglePage() {
       {/* Skills Section */}
       <div
         className={`skills-section pb-20 slow ${
-          darkMode ? "bg-dark" : "bg-white"
+          darkMode ? "bg-dark" : "bg-[#EBEBEB]"
         }`}
         id="skills-page"
       >
@@ -58,7 +58,7 @@ export function SinglePage() {
       {/* Projects Section */}
       <div
         className={`slow projects-section pb-20 pt-[22%] lg:pt-4 ${
-          darkMode ? "bg-dark" : "bg-white"
+          darkMode ? "bg-dark" : "bg-[#EBEBEB]"
         }`}
         id="projects-page"
       >
@@ -68,7 +68,7 @@ export function SinglePage() {
       {/* Contact Section */}
       <div
         className={`slow contact-section pb-20 pt-[22%] lg:pt-4 ${
-          darkMode ? "bg-dark" : "bg-white"
+          darkMode ? "bg-dark" : "bg-[#EBEBEB]"
         }`}
         id="contact-page"
       >
@@ -79,13 +79,9 @@ export function SinglePage() {
       {showScrollToTop && (
         <div
           onClick={scrollToTop}
-          className={`slow text-[2.8rem] lg:text-6xl fixed bottom-8 right-8 ${
-            darkMode ? "text-darker" : "text-orange"
-          }  p-2 rounded-full cursor-pointer  ${
-            darkMode ? "hover:text-orange" : "hover:text-darker "
-          } `}
+          className={`slow text-[3.2rem] lg:text-[3.7rem] fixed bottom-8 right-8 text-orange cursor-pointer`}
         >
-          <BsArrowUpSquareFill />
+          <IoIosArrowDropup />
         </div>
       )}
 

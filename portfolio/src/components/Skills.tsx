@@ -1,6 +1,8 @@
 import { backSkills, frontSkills, miscTools } from "../constants/data";
+import { useDarkMode } from "../context/useDarkMode";
 
 export function FrontEndSkills() {
+  const { darkMode } = useDarkMode();
   return (
     <div className="flex flex-wrap justify-center">
       {frontSkills.map((skill) => (
@@ -9,7 +11,11 @@ export function FrontEndSkills() {
           className="w-24 p-2 xl:w-32 lg:w-28 group relative"
         >
           <div className="relative w-full h-full">
-            <div className="w-full h-full p-4 outline outline-white rounded-md ">
+            <div
+              className={`w-full h-full p-4 outline ${
+                darkMode ? "outline-white" : "outline-dark"
+              }   rounded-md `}
+            >
               <img
                 src={skill.logo}
                 className="w-full h-full object-contain rounded-md"
@@ -29,6 +35,7 @@ export function FrontEndSkills() {
 }
 
 export function BackEndSkills() {
+  const { darkMode } = useDarkMode();
   return (
     <div className="flex flex-wrap justify-center">
       {backSkills.map((skill) => (
@@ -37,7 +44,11 @@ export function BackEndSkills() {
           className="w-24 p-2 xl:w-32 lg:w-28 group relative"
         >
           <div className="relative w-full h-full">
-            <div className="w-full h-full p-4 outline outline-white rounded-md ">
+            <div
+              className={`w-full h-full p-4 outline ${
+                darkMode ? "outline-white" : "outline-dark"
+              } rounded-md `}
+            >
               <img
                 src={skill.logo}
                 className="w-full h-full object-contain rounded-md"
@@ -57,6 +68,7 @@ export function BackEndSkills() {
 }
 
 export function Tools() {
+  const { darkMode } = useDarkMode();
   return (
     <div className="flex flex-wrap justify-center lg:mx-[22%]">
       {miscTools.map((tool) => (
@@ -64,7 +76,11 @@ export function Tools() {
           key={tool.name}
           className="w-24 p-2 xl:w-32 lg:w-28 group relative"
         >
-          <div className="relative w-full h-full p-4 outline outline-white rounded-md ">
+          <div
+            className={`relative w-full h-full p-4 outline ${
+              darkMode ? "outline-white" : "outline-dark"
+            } rounded-md `}
+          >
             <img
               src={tool.logo}
               className="w-full h-full object-contain"

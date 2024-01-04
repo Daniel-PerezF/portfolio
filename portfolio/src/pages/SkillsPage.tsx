@@ -8,7 +8,7 @@ export function SkillsPage() {
   const { darkMode } = useDarkMode();
   return (
     <div
-      className={`slow ${darkMode ? "bg-dark" : "bg-white"} ${
+      className={`slow ${darkMode ? "bg-dark" : "bg-[#EBEBEB]"} ${
         darkMode ? "text-white" : "text-darker"
       } min-h-screen pt-[8rem]`}
     >
@@ -23,7 +23,7 @@ export function SkillsPage() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 select-none">
         <div className="w-full flex justify-center">
           <div className=" w-full mx-4 pt-2">
             <div className="flex gap-4 justify-center">
@@ -35,11 +35,11 @@ export function SkillsPage() {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center select-none">
           <hr className="mx-8 mt-4 lg:w-[68%] xl:w-7/12 w-full" />
         </div>
         <div className="w-full flex justify-center">
-          <div className="w-full mx-4 pt-2">
+          <div className="w-full mx-4 pt-2 select-none">
             <div className="flex gap-4 justify-center">
               <FaGear className="text-4xl  mb-4" />
               <h3 className="text-3xl  self-center mb-4">Back End</h3>
@@ -54,11 +54,11 @@ export function SkillsPage() {
       <div className="w-full flex justify-center">
         <hr className="mx-8 mt-4 lg:w-[68%] xl:w-7/12 w-full" />
       </div>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center select-none">
         <div className="w-full mx-4 pt-2">
           <div className="flex gap-4 justify-center">
             <FaTools className="text-4xl  mb-4 mt-1" />
-            <h3 className="text-3xl  self-center mb-4">Misc Tools</h3>
+            <h3 className="text-3xl  self-center mb-4"> Tools</h3>
           </div>
           <div>
             <Tools />
