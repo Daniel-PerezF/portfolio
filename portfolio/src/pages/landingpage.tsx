@@ -21,6 +21,7 @@ export function LandingPage() {
         <div className="w-full flex justify-center">
           <div className="w-64 h-64 lg:w-[25rem] lg:h-[25rem] sm:w-64 sm:h-64 md:w-72 md:h-72 overflow-hidden">
             <img
+              draggable="false"
               src={`/daniel-perez.png`}
               className={`rounded-full w-full h-full object-cover select-none `}
               alt="Daniel Perez"
