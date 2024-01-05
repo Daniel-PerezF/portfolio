@@ -105,13 +105,13 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
     >
       <div
         className={`absolute inset-0  slow ${
-          darkMode ? "bg-black opacity-20" : "bg-black opacity-10"
+          darkMode ? "bg-black opacity-20" : "bg-black opacity-[0.40]"
         }`}
         onClick={onClose}
       ></div>
       <div
         className={`slow ${
-          darkMode ? "bg-[#6d7c88dd] text-white" : "bg-[#cfd6ddd2] text-darker"
+          darkMode ? "bg-[#6d7c88dd] text-white" : "bg-[#c6c7c9e0] text-darker"
         } px-8 py-1 w-[50%] lg:w-[30%] h-screen fixed right-0 top-20 transform transition-transform ease-in-out duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
