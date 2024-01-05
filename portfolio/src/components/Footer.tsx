@@ -65,7 +65,7 @@ export function Footer() {
           </div>
         </div>
         <div>
-          <h3 className="underline">Lets Connect</h3>
+          <h3 className="underline">Let's Connect</h3>
           <div className="flex justify-between w-full text-2xl ">
             <Link
               to="https://www.linkedin.com/in/daniel-f-perez/"

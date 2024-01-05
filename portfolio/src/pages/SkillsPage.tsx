@@ -16,10 +16,11 @@ export function SkillsPage() {
         <h3 className="text-4xl md:text-4xl lg:text-5xl">Skills</h3>
         <div className="w-full flex justify-center py-4">
           <p className="px-2 w-[98%] lg:w-[74%] xl:w-3/5  lg:px-12 text-center text-[0.95rem] lg:text-base xl:text-lg">
-            I developed my software skills at LearningFuze, a leading coding
-            bootcamp in Irvine, California. Delving into an intensive curriculum
-            and gaining hands-on experience in web development, mastering key
-            technologies like HTML, CSS, JavaScript, and more as listed below.
+            I honed my software proficiency at LearningFuze, a distinguished
+            coding bootcamp located in Irvine, California. Immersed in a
+            rigorous curriculum, I gained hands-on experience in web
+            development, mastering key technologies such as HTML, CSS,
+            JavaScript, and more, as outlined below.
           </p>
         </div>
       </div>

@@ -47,7 +47,7 @@ export function Contact() {
             darkMode ? "text-white" : "text-darker"
           }`}
         >
-          Lets Chat!
+          Let's Chat!
         </h3>
         <div className="w-full flex justify-center py-4 xl:mr-[4rem] lg:mr-0">
           <p
