@@ -13,7 +13,6 @@ export function LandingPage() {
     window.open(resumeURL, "_blank");
   };
   useEffect(() => {
-    // Scroll to the top when the component mounts
     window.scrollTo(0, 0);
   }, []);
   const { darkMode } = useDarkMode();
