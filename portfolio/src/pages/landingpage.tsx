@@ -3,6 +3,9 @@ import { Particle } from "../components/Particle";
 import { RiArrowDownDoubleFill } from "react-icons/ri";
 import { useEffect } from "react";
 import { useDarkMode } from "../context/useDarkMode";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export function LandingPage() {
   const openResume = () => {
@@ -45,6 +48,21 @@ export function LandingPage() {
         >
           Software Engineer
         </p>
+        <div
+          className={`ml-4 flex w-1/4 justify-between text-4xl pt-2 ${
+            darkMode ? "text-white" : "text-darker"
+          }`}
+        >
+          <Link to="https://github.com/Daniel-PerezF" target="_blank">
+            <FaGithub className="cursor-pointer hover:translate-y-1 transition ease-in-out " />
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/daniel-f-perez/"
+            target="_blank"
+          >
+            <FaLinkedin className="cursor-pointer hover:translate-y-1 transition ease-in-out" />
+          </Link>
+        </div>
         <div className="flex justify-between w-[75%] pt-8 ">
           <ScrollLink to="contact-page" smooth={true} duration={500}>
             <button
@@ -73,7 +91,7 @@ export function LandingPage() {
           </button>
         </div>
         <ScrollLink to="skills-page" smooth={true} duration={500} offset={-10}>
-          <div className="pt-20">
+          <div className="pt-14">
             <RiArrowDownDoubleFill
               className={`text-6xl custom-bounce  cursor-pointer hover:text-[#FB904D] slow ${
                 darkMode ? "text-white" : "text-dark"

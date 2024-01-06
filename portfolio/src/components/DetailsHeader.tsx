@@ -17,7 +17,7 @@ export function DetailsHeader() {
           className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px] cursor-pointer"
         />
       </Link>
-      <div className="absolute top-[0.7rem] right-1">
+      <div className="absolute top-[0.7rem] right-1 hover:translate-y-[3px] transition ease-in-out">
         <DarkModeSwitch
           checked={darkMode}
           onChange={toggleDarkMode}

@@ -127,7 +127,7 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
       >
         <div className="flex justify-between h-[90vh] pt-[2rem] flex-col">
           <div className="flex flex-col gap-20 max-w-[25%] text-xl ">
-            <div className="absolute top-[1rem] right-4 transition slow">
+            <div className="absolute top-[1rem] right-4 ">
               <DarkModeSwitch
                 checked={darkMode}
                 moonColor="white"
