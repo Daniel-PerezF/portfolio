@@ -48,7 +48,7 @@ export function LandingPage() {
         <div className="flex justify-between w-[75%] pt-8 ">
           <ScrollLink to="contact-page" smooth={true} duration={500}>
             <button
-              className={`px-4 py-1 rounded-sm text-[0.85rem] font-medium ${
+              className={`px-4 py-1 rounded-sm text-[0.85rem] font-medium slow ${
                 darkMode ? "bg-darker" : "bg-dark"
               } hover:text-[#FB904D] outline-1 ${
                 darkMode ? "" : "outline-dark"

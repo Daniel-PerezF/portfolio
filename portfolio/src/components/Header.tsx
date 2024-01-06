@@ -57,10 +57,14 @@ export function Header() {
           duration={500}
           onClick={scrollToTop}
         >
-          <h3 className="cursor-pointer  hover:text-[#FB904D]">Home</h3>
+          <h3 className="cursor-pointer hover:text-[#FB904D] transition ease-in">
+            Home
+          </h3>
         </ScrollLink>
         <ScrollLink to="skills-page" smooth={true} duration={500} offset={-10}>
-          <h3 className="cursor-pointer  hover:text-[#FB904D]">Skills</h3>
+          <h3 className="cursor-pointer hover:text-[#FB904D] transition ease-in">
+            Skills
+          </h3>
         </ScrollLink>
         <ScrollLink
           to="projects-page"
@@ -68,7 +72,9 @@ export function Header() {
           duration={500}
           offset={-50}
         >
-          <h3 className="cursor-pointer  hover:text-[#FB904D]">Projects</h3>
+          <h3 className="cursor-pointer hover:text-[#FB904D] transition ease-in">
+            Projects
+          </h3>
         </ScrollLink>
         <ScrollLink
           to="contact-page"
@@ -76,7 +82,9 @@ export function Header() {
           duration={500}
           offset={-110}
         >
-          <h3 className="cursor-pointer  hover:text-[#FB904D]">Contact</h3>
+          <h3 className="cursor-pointer hover:text-[#FB904D] transition ease-in">
+            Contact
+          </h3>
         </ScrollLink>
         <div className="hover:translate-y-[3px] transition ease-in-out">
           <DarkModeSwitch
@@ -165,9 +173,6 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
             >
               Contact
             </ScrollLink>
-          </div>
-          <div className="mt-9 text-[0.6rem] font-light lg:text-sm leading-5 text-white pb-32">
-            <h3>© 2024. All Rights Reserved.</h3>
           </div>
         </div>
       </div>
