@@ -10,12 +10,12 @@ export function SkillsPage() {
     <div
       className={`slow ${darkMode ? "bg-dark" : "bg-[#EBEBEB]"} ${
         darkMode ? "text-white" : "text-darker"
-      } min-h-screen pt-[8rem]`}
+      } min-h-screen pt-[10rem]`}
     >
       <div className="flex flex-col justify-center items-center  gap-4">
         <h3 className="text-4xl md:text-4xl lg:text-5xl">Skills</h3>
         <div className="w-full flex justify-center py-4">
-          <p className="px-2 w-[98%] lg:w-[74%] xl:w-3/5  lg:px-12 text-center text-[0.95rem] lg:text-base xl:text-lg">
+          <p className="px-4 w-full lg:w-[70%] text-center text-[0.95rem] lg:text-base xl:text-lg">
             I honed my software proficiency at LearningFuze, a distinguished
             coding bootcamp located in Irvine, California. Immersed in a
             rigorous curriculum, I gained hands-on experience in web
@@ -37,7 +37,7 @@ export function SkillsPage() {
           </div>
         </div>
         <div className="w-full flex justify-center select-none">
-          <hr className="mx-8 mt-4 lg:w-[68%] xl:w-7/12 w-full" />
+          <hr className="mx-8 mt-4 lg:w-[68%] xl:w-7/12 w-1/2" />
         </div>
         <div className="w-full flex justify-center">
           <div className="w-full mx-4 pt-2 select-none">

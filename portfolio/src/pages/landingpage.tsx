@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export function LandingPage() {
   const openResume = () => {
-    const resumeURL = `${import.meta.env.BASE_URL}resume.pdf`;
+    const resumeURL = `Daniel-Perez-2024-Resume.pdf`;
     window.open(resumeURL, "_blank");
   };
   useEffect(() => {
@@ -19,7 +19,7 @@ export function LandingPage() {
   return (
     <div className={`h-screen flex flex-col items-center justify-center `}>
       <Particle />
-      <div className="flex justify-center pt-24 pb-4">
+      {/* <div className="flex justify-center pt-24 pb-4">
         <div className="w-full flex justify-center">
           <div className="w-64 h-64 lg:w-[25rem] lg:h-[25rem] sm:w-64 sm:h-64 md:w-72 md:h-72 overflow-hidden">
             <img
@@ -30,7 +30,7 @@ export function LandingPage() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="flex justify-center items-center flex-col">
         <h3
@@ -89,7 +89,7 @@ export function LandingPage() {
             Resume
           </button>
         </div>
-        <ScrollLink to="skills-page" smooth={true} duration={500} offset={-10}>
+        <ScrollLink to="about-page" smooth={true} duration={500} offset={-10}>
           <div className="pt-14">
             <RiArrowDownDoubleFill
               className={`text-6xl custom-bounce  cursor-pointer hover:text-[#FB904D] slow ${

@@ -7,6 +7,7 @@ import { ProjectsPage } from "./ProjectsPage";
 import { SkillsPage } from "./SkillsPage";
 import { useDarkMode } from "../context/useDarkMode";
 import { IoIosArrowDropup } from "react-icons/io";
+import { AboutPage } from "./AboutPage";
 
 export function SinglePage() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -41,15 +42,21 @@ export function SinglePage() {
         <Header />
       </div>
 
-      <div className="landing-section" id="landing-page">
+      <div className="" id="landing-page">
         <LandingPage />
+      </div>
+
+      {/*About Page */}
+      <div
+        className={`pb-20 slow  ${darkMode ? "bg-dark" : "bg-[#EBEBEB]"}`}
+        id="about-page"
+      >
+        <AboutPage />
       </div>
 
       {/* Skills Section */}
       <div
-        className={`skills-section pb-20 slow ${
-          darkMode ? "bg-dark" : "bg-[#EBEBEB]"
-        }`}
+        className={`pb-20 slow ${darkMode ? "bg-dark" : "bg-[#EBEBEB]"}`}
         id="skills-page"
       >
         <SkillsPage />
@@ -57,9 +64,7 @@ export function SinglePage() {
 
       {/* Projects Section */}
       <div
-        className={`slow projects-section pb-20 pt-[22%] lg:pt-4 ${
-          darkMode ? "bg-dark" : "bg-[#EBEBEB]"
-        }`}
+        className={`slow pb-20  ${darkMode ? "bg-dark" : "bg-[#EBEBEB]"}`}
         id="projects-page"
       >
         <ProjectsPage />
@@ -67,7 +72,7 @@ export function SinglePage() {
 
       {/* Contact Section */}
       <div
-        className={`slow contact-section pb-20 pt-[22%] lg:pt-4 ${
+        className={`slow pb-20 pt-[22%] lg:pt-4 ${
           darkMode ? "bg-dark" : "bg-[#EBEBEB]"
         }`}
         id="contact-page"

@@ -22,7 +22,7 @@ export function Header() {
     <div className="flex justify-between p-1 relative z-61 pt-3">
       <MenuModal isOpen={isOpen} onClose={handleCloseMenu} />
       <ScrollLink
-        to="landing-section"
+        to="landing-page"
         smooth={true}
         duration={500}
         onClick={scrollToTop}
@@ -52,7 +52,7 @@ export function Header() {
         }`}
       >
         <ScrollLink
-          to="landing-section"
+          to="landing-page"
           smooth={true}
           duration={500}
           onClick={scrollToTop}
@@ -61,27 +61,31 @@ export function Header() {
             Home
           </h3>
         </ScrollLink>
-        <ScrollLink to="skills-page" smooth={true} duration={500} offset={-10}>
+
+        <ScrollLink
+          to="about-page"
+          smooth={true}
+          duration={500}
+          onClick={scrollToTop}
+          offset={30}
+        >
+          <h3 className="cursor-pointer hover:text-[#FB904D] transition ease-in">
+            About
+          </h3>
+        </ScrollLink>
+
+        <ScrollLink to="skills-page" smooth={true} duration={500} offset={20}>
           <h3 className="cursor-pointer hover:text-[#FB904D] transition ease-in">
             Skills
           </h3>
         </ScrollLink>
-        <ScrollLink
-          to="projects-page"
-          smooth={true}
-          duration={500}
-          offset={-50}
-        >
+        <ScrollLink to="projects-page" smooth={true} duration={500} offset={20}>
           <h3 className="cursor-pointer hover:text-[#FB904D] transition ease-in">
             Projects
           </h3>
         </ScrollLink>
-        <ScrollLink
-          to="contact-page"
-          smooth={true}
-          duration={500}
-          offset={-110}
-        >
+
+        <ScrollLink to="contact-page" smooth={true} duration={500} offset={-50}>
           <h3 className="cursor-pointer hover:text-[#FB904D] transition ease-in">
             Contact
           </h3>
@@ -138,7 +142,7 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
             </div>
             <ScrollLink
               className="hover:text-[#FB904D] ease-in-out delay-75  mt-10"
-              to="landing-section"
+              to="landing-page"
               smooth={true}
               duration={500}
               onClick={onClose}
@@ -149,9 +153,21 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
             <ScrollLink
               className="hover:text-[#FB904D] ease-in-out delay-75 "
               onClick={onClose}
+              to="about-page"
+              smooth={true}
+              duration={500}
+              offset={30}
+            >
+              About
+            </ScrollLink>
+
+            <ScrollLink
+              className="hover:text-[#FB904D] ease-in-out delay-75 "
+              onClick={onClose}
               to="skills-page"
               smooth={true}
               duration={500}
+              offset={40}
             >
               Skills
             </ScrollLink>
@@ -161,15 +177,18 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
               duration={500}
               className="hover:text-[#FB904D] ease-in-out delay-75 "
               onClick={onClose}
+              offset={40}
             >
               Projects
             </ScrollLink>
+
             <ScrollLink
               to="contact-page"
               smooth={true}
               duration={500}
               className="hover:text-[#FB904D] ease-in-out delay-75 "
               onClick={onClose}
+              offset={-10}
             >
               Contact
             </ScrollLink>

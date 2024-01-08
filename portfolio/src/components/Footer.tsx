@@ -27,11 +27,11 @@ export function Footer() {
     >
       <div className="flex justify-evenly w-full ">
         <div>
-          <h3>Site Map</h3>
-          <hr className="my-2 " />
-          <div className="flex flex-col items-center text-[0.9rem] lg:text-lg">
+          <h3 className="lg:text-lg">Site Map</h3>
+          <hr className="my-2 w-[58%]" />
+          <div className="flex  items-center text-[0.9rem] lg:text-lg flex-wrap w-3/4 gap-4">
             <ScrollLink
-              to="landing-section"
+              to="landing-page"
               smooth={true}
               duration={500}
               onClick={scrollToTop}
@@ -45,7 +45,7 @@ export function Footer() {
               to="skills-page"
               smooth={true}
               duration={500}
-              offset={-40}
+              offset={20}
             >
               <h3 className="cursor-pointer  hover:text-[#FB904D]  transition ease-in">
                 Skills
@@ -55,17 +55,28 @@ export function Footer() {
               to="projects-page"
               smooth={true}
               duration={500}
-              offset={-50}
+              offset={20}
             >
               <h3 className="cursor-pointer  hover:text-[#FB904D]  transition ease-in">
                 Projects
               </h3>
             </ScrollLink>
             <ScrollLink
+              to="about-page"
+              smooth={true}
+              duration={500}
+              offset={-140}
+            >
+              <h3 className="cursor-pointer  hover:text-[#FB904D]  transition ease-in">
+                About
+              </h3>
+            </ScrollLink>
+
+            <ScrollLink
               to="contact-page"
               smooth={true}
               duration={500}
-              offset={-110}
+              offset={0}
             >
               <h3 className="cursor-pointer  hover:text-[#FB904D]  transition ease-in">
                 Contact
@@ -74,7 +85,7 @@ export function Footer() {
           </div>
         </div>
         <div>
-          <h3>Let's Connect</h3>
+          <h3 className="lg:text-lg">Let's Connect</h3>
           <hr className="my-2 " />
 
           <div className="flex justify-between w-full text-2xl gap-3">
