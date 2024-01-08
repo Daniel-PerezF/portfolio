@@ -89,7 +89,7 @@ export function LandingPage() {
             Resume
           </button>
         </div>
-        <ScrollLink to="about-page" smooth={true} duration={500} offset={-10}>
+        <ScrollLink to="about-page" smooth={true} duration={500} offset={30}>
           <div className="pt-14">
             <RiArrowDownDoubleFill
               className={`text-6xl custom-bounce  cursor-pointer hover:text-[#FB904D] slow ${
