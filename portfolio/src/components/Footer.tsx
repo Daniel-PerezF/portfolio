@@ -22,7 +22,7 @@ export function Footer() {
   return (
     <div
       className={`slow ${
-        darkMode ? "bg-[#232f37] text-white " : "bg-dark text-white"
+        darkMode ? "bg-[#232f37] text-white " : "bg-[#688599] text-white"
       } p-4 `}
     >
       <div className="flex justify-evenly w-full ">
@@ -38,6 +38,17 @@ export function Footer() {
             >
               <h3 className="cursor-pointer  hover:text-[#FB904D]  transition ease-in">
                 Home
+              </h3>
+            </ScrollLink>
+
+            <ScrollLink
+              to="about-page"
+              smooth={true}
+              duration={500}
+              offset={20}
+            >
+              <h3 className="cursor-pointer  hover:text-[#FB904D]  transition ease-in">
+                About
               </h3>
             </ScrollLink>
 
@@ -59,16 +70,6 @@ export function Footer() {
             >
               <h3 className="cursor-pointer  hover:text-[#FB904D]  transition ease-in">
                 Projects
-              </h3>
-            </ScrollLink>
-            <ScrollLink
-              to="about-page"
-              smooth={true}
-              duration={500}
-              offset={-140}
-            >
-              <h3 className="cursor-pointer  hover:text-[#FB904D]  transition ease-in">
-                About
               </h3>
             </ScrollLink>
 

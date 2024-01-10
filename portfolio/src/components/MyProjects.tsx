@@ -7,12 +7,9 @@ export function MyProjects() {
   const { darkMode } = useDarkMode();
   return (
     <div className="w-full justify-center flex">
-      <div className="flex mb-24 flex-wrap justify-center lg:w-4/5 md:w-3/4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:w-4/5 md:w-3/4">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="p-4 rounded-md mb-4 w-full lg:w-1/2 md:w-full sm:w-full"
-          >
+          <div key={index} className="p-4 rounded-md mb-4 w-full">
             <div className="lg:w-3/4 w-full flex justify-center flex-col m-auto">
               <div className="w-full lg:max-w-[28rem] relative group">
                 <Link to={`/projects/${project.key}`}>

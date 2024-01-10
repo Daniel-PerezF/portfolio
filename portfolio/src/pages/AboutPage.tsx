@@ -1,4 +1,4 @@
-import { Carousel } from "../components/Carousel";
+import { Carousel2 } from "../components/Carousel2";
 import { memojis } from "../constants/data";
 import { useDarkMode } from "../context/useDarkMode";
 
@@ -6,34 +6,31 @@ export function AboutPage() {
   const { darkMode } = useDarkMode();
   return (
     <div
-      className={`min-h-screen ${
+      className={`min-h-screen slow ${
         darkMode ? `bg-dark text-white` : "bg-[#EBEBEB] text-darker"
       }`}
     >
-      <div className="flex flex-col justify-center items-center  gap-4 lg:pt-44 pt-36">
+      <div className="flex flex-col justify-center items-center gap-4 lg:pt-44 pt-36">
         <h3 className="text-4xl md:text-4xl lg:text-5xl">About Me</h3>
-        <div className="w-full lg:w-[95%] text-center  md:w-3/4 flex justify-center py-4 flex-col ">
+        <div className="w-full lg:w-[95%] text-center md:w-3/4 flex justify-center py-4 flex-col">
           <div className="flex justify-center pb-4">
             <div className="w-full flex justify-center">
-              <div className="overflow-hidden lg:w-[15%] w-[35%]">
-                <Carousel
-                  items={memojis.map((img, imgIndex) => (
-                    <img
-                      key={imgIndex}
-                      src={img}
-                      className="w-full rounded-md"
-                    />
-                  ))}
-                />
-                {/* <img
-                  draggable="false"
-                  src={`/memoji-wave.png`}
-                  className={` w-full h-full object-cover select-none `}
-                  alt="Daniel Perez"
-                /> */}
+              <div className="overflow-hidden w-full justify-center flex">
+                <div className="max-w-[10rem] h-[200px] overflow-hidden">
+                  <Carousel2
+                    items={memojis.map((img, imgIndex) => (
+                      <img
+                        key={imgIndex}
+                        src={img}
+                        className="w-full rounded-md cursor-pointer"
+                      />
+                    ))}
+                  />
+                </div>
               </div>
             </div>
           </div>
+
           <div className="w-full flex justify-center">
             <p className="px-4 w-full lg:w-[70%] text-center text-[0.95rem] lg:text-base xl:text-lg">
               Hello there! I'm Daniel, a software developer with a passion for

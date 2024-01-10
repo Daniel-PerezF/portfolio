@@ -72,19 +72,21 @@ export function ProjectDetails() {
           </div>
 
           {view === "desktop" ? (
-            <Carousel
-              items={project.imgs.map((img, imgIndex) => (
-                <img
-                  key={imgIndex}
-                  src={img}
-                  className="w-full rounded-md"
-                  alt={`Project ${project.name} Image ${imgIndex + 1}`}
-                />
-              ))}
-            />
+            <div className="flex h-[400px] lg:h-[450px] justify-center flex-col overflow-hidden ">
+              <Carousel
+                items={project.imgs.map((img, imgIndex) => (
+                  <img
+                    key={imgIndex}
+                    src={img}
+                    className="w-full rounded-md"
+                    alt={`Project ${project.name} Image ${imgIndex + 1}`}
+                  />
+                ))}
+              />
+            </div>
           ) : project.mobileImgs && project.mobileImgs.length > 0 ? (
-            <div className="flex justify-center">
-              <div className="">
+            <div className="flex justify-center overflow-hidden">
+              <div className="h-[400px] lg:h-[450px] justify-center flex-col flex overflow-hidden">
                 <Carousel
                   items={project.mobileImgs.map((img, imgIndex) => (
                     <div key={imgIndex}>

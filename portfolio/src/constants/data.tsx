@@ -232,6 +232,53 @@ export const projects = [
       "Ghibli Wiki is a front-end application tailored for Studio Ghibli enthusiasts, providing a platform to explore the entire catalog of Studio Ghibli films. This project was initiated during the junior phase at LearningFuze, the coding bootcamp I attended, and has since undergone a transformation using React.js, TypeScript, and Tailwind CSS.",
     tech: ["React.js, TypeScript, Tailwind CSS, Fetch API, Local Storage"],
   },
+  // {
+  //   name: "Portfolio Website",
+  //   key: "portfolio",
+  //   mainImg: "/project-images/ghibli-wiki-mac.png",
+  //   imgs: [
+  //     "/project-images/ghibli-wiki-home.png",
+  //     "/project-images/ghibli-wiki-details.png",
+  //     "/project-images/ghibli-wiki-nav.png",
+  //     "/project-images/ghibli-wiki-about.png",
+  //     "/project-images/ghibli-wiki-favorites.png",
+  //     "/project-images/ghibli-wiki-watchlist.png",
+  //   ],
+  //   mobileImgs: [
+  //     "/project-images/ghibli-wiki-home-mobile.png",
+  //     "/project-images/ghibli-wiki-details-mobile.png",
+  //     "/project-images/ghibli-wiki-favorites-mobile.png",
+  //     "/project-images/ghibli-wiki-details-2-mobile.png",
+  //     "/project-images/ghibli-wiki-watchlist-mobile.png",
+  //     "/project-images/ghibli-wiki-nav-mobile.png",
+  //     "/project-images/ghibli-wiki-about-mobile.png",
+  //   ],
+  //   features: [
+  //     {
+  //       ft: "Interactive Background",
+  //       desc: "Implemented ts particles for an interactive background on the portfolio website, creating a visually appealing and dynamic user experience.",
+  //     },
+  //     {
+  //       ft: "Tailwind Dark Mode",
+  //       desc: "Incorporate Tailwind CSS for dark mode functionality, allowing users to switch between light and dark modes for an improved viewing experience.",
+  //     },
+  //     {
+  //       ft: "Responsive Design",
+  //       desc: "Showcase projects with both mobile and desktop views to highlight the responsiveness of each project. Ensure a seamless user experience across various devices.",
+  //     },
+  //     {
+  //       ft: "Local Storage Preferences",
+  //       desc: "Utilized local storage to persistently store and retrieve user theme preference, ensuring a personalized experience that persists between sessions.",
+  //     },
+  //   ],
+  //   live: "https://danielperez.io",
+  //   github: "https://github.com/Daniel-PerezF/portfolio",
+  //   about:
+  //     "A front end web application for showcasing my coding journey, skills, projects and a way to contact me.",
+  //   fullDesc:
+  //     "My portfolio website is a front-end web application designed to showcase my coding journey, skills, projects, and provide a way for users to contact me. With interactive elements, responsive design, dark mode functionality, and local storage integration, my portfolio website offers a personalized and engaging experience for visitors.",
+  //   tech: ["React.js, TypeScript, Tailwind CSS, TS Particles, Local Storage"],
+  // },
 ];
 
 export const memojis = ["/memoji-wave.png", "/memoji-laptop.png"];

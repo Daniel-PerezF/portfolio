@@ -90,7 +90,7 @@ export function LandingPage() {
           </button>
         </div>
         <ScrollLink to="about-page" smooth={true} duration={500} offset={30}>
-          <div className="relative top-24">
+          <div className="relative top-8">
             <RiArrowDownDoubleFill
               className={`text-6xl custom-bounce  cursor-pointer hover:text-[#FB904D] slow ${
                 darkMode ? "text-white" : "text-dark"
