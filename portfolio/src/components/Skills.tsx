@@ -12,7 +12,7 @@ export function FrontEndSkills() {
         >
           <div className="relative w-full h-full">
             <div
-              className={`w-full h-full p-4 outline ${
+              className={`w-full h-full p-4 outline outline-2 ${
                 darkMode ? "outline-white" : "outline-dark"
               }   rounded-md `}
             >
@@ -45,7 +45,7 @@ export function BackEndSkills() {
         >
           <div className="relative w-full h-full">
             <div
-              className={`w-full h-full p-4 outline ${
+              className={`w-full h-full p-4 outline outline-2 ${
                 darkMode ? "outline-white" : "outline-dark"
               } rounded-md `}
             >
@@ -77,7 +77,7 @@ export function Tools() {
           className="w-24 p-2 xl:w-32 lg:w-28 group relative"
         >
           <div
-            className={`relative w-full h-full p-4 outline ${
+            className={`relative w-full h-full p-4 outline outline-2 ${
               darkMode ? "outline-white" : "outline-dark"
             } rounded-md `}
           >

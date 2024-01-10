@@ -233,3 +233,5 @@ export const projects = [
     tech: ["React.js, TypeScript, Tailwind CSS, Fetch API, Local Storage"],
   },
 ];
+
+export const memojis = ["/memoji-wave.png", "/memoji-laptop.png"];

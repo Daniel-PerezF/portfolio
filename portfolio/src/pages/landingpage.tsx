@@ -19,9 +19,9 @@ export function LandingPage() {
   return (
     <div className={`h-screen flex flex-col items-center justify-center `}>
       <Particle />
-      {/* <div className="flex justify-center pt-24 pb-4">
+      <div className="flex justify-center pt-24 pb-4">
         <div className="w-full flex justify-center">
-          <div className="w-64 h-64 lg:w-[25rem] lg:h-[25rem] sm:w-64 sm:h-64 md:w-72 md:h-72 overflow-hidden">
+          <div className="w-64 h-64 lg:w-[20rem] lg:h-[20rem] sm:w-64 sm:h-64 md:w-72 md:h-72 overflow-hidden">
             <img
               draggable="false"
               src={`/daniel-perez.png`}
@@ -30,9 +30,9 @@ export function LandingPage() {
             />
           </div>
         </div>
-      </div> */}
+      </div>
 
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col gap-4">
         <h3
           className={`slow text-6xl font-bold select-none ${
             darkMode ? "text-white" : "text-darker"
@@ -90,7 +90,7 @@ export function LandingPage() {
           </button>
         </div>
         <ScrollLink to="about-page" smooth={true} duration={500} offset={30}>
-          <div className="pt-14">
+          <div className="relative top-24">
             <RiArrowDownDoubleFill
               className={`text-6xl custom-bounce  cursor-pointer hover:text-[#FB904D] slow ${
                 darkMode ? "text-white" : "text-dark"

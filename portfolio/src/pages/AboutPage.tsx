@@ -1,3 +1,5 @@
+import { Carousel } from "../components/Carousel";
+import { memojis } from "../constants/data";
 import { useDarkMode } from "../context/useDarkMode";
 
 export function AboutPage() {
@@ -10,16 +12,25 @@ export function AboutPage() {
     >
       <div className="flex flex-col justify-center items-center  gap-4 lg:pt-44 pt-36">
         <h3 className="text-4xl md:text-4xl lg:text-5xl">About Me</h3>
-        <div className="lg:w-3/4 w-fullflex justify-center py-4 flex-col lg:flex-row">
+        <div className="w-full lg:w-[95%] text-center  md:w-3/4 flex justify-center py-4 flex-col ">
           <div className="flex justify-center pb-4">
             <div className="w-full flex justify-center">
-              <div className="w-64 h-64 lg:w-[25rem] lg:h-[25rem] sm:w-64 sm:h-64 md:w-72 md:h-72 overflow-hidden">
-                <img
-                  draggable="false"
-                  src={`/daniel-perez.png`}
-                  className={`rounded-full w-full h-full object-cover select-none `}
-                  alt="Daniel Perez"
+              <div className="overflow-hidden lg:w-[15%] w-[35%]">
+                <Carousel
+                  items={memojis.map((img, imgIndex) => (
+                    <img
+                      key={imgIndex}
+                      src={img}
+                      className="w-full rounded-md"
+                    />
+                  ))}
                 />
+                {/* <img
+                  draggable="false"
+                  src={`/memoji-wave.png`}
+                  className={` w-full h-full object-cover select-none `}
+                  alt="Daniel Perez"
+                /> */}
               </div>
             </div>
           </div>
