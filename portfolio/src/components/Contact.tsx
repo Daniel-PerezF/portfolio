@@ -89,7 +89,10 @@ export function Contact() {
           >
             <div className="flex">
               <div className="w-1/2 pr-2">
-                <label className={`${darkMode ? "text-white" : "text-darker"}`}>
+                <label
+                  htmlFor="name"
+                  className={`${darkMode ? "text-white" : "text-darker"}`}
+                >
                   Name
                 </label>
                 <input
@@ -106,7 +109,7 @@ export function Contact() {
                   darkMode ? "text-white" : "text-darker"
                 }`}
               >
-                <label className="">Subject</label>
+                <label htmlFor="subject">Subject</label>
                 <input
                   type="text"
                   name="subject"
@@ -119,7 +122,7 @@ export function Contact() {
             </div>
             <div className={`flex ${darkMode ? "text-white" : "text-darker"}`}>
               <div className="w-1/2 pr-2">
-                <label className="">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   name="email"
@@ -130,7 +133,7 @@ export function Contact() {
                 />
               </div>
               <div className="w-1/2 pl-2">
-                <label className=" ">Linkedin (Optional)</label>
+                <label htmlFor="linkedin">Linkedin (Optional)</label>
                 <input
                   type="text"
                   name="linkedin"
@@ -141,7 +144,10 @@ export function Contact() {
               </div>
             </div>
 
-            <label className={`${darkMode ? "text-white" : "text-darker"}`}>
+            <label
+              htmlFor="message"
+              className={`${darkMode ? "text-white" : "text-darker"}`}
+            >
               Message
             </label>
             <textarea

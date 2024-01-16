@@ -29,6 +29,7 @@ export function Header() {
       >
         <img
           src={`/orange-icon.png`}
+          alt="dp icon"
           draggable="false"
           className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px] cursor-pointer"
         />

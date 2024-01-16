@@ -89,7 +89,7 @@ export function Footer() {
           <h3 className="lg:text-lg">Let's Connect</h3>
           <hr className="my-2 " />
 
-          <div className="flex justify-between w-full text-2xl gap-3">
+          <div className="flex justify-between w-full text-xl gap-3">
             <Link
               to="https://www.linkedin.com/in/daniel-f-perez/"
               target="_blank"
