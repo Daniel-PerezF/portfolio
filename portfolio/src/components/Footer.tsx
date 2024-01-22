@@ -27,9 +27,9 @@ export function Footer() {
     >
       <div className="flex justify-evenly w-full ">
         <div>
-          <h3 className="lg:text-lg">Site Map</h3>
+          <h3 className="lg:text-lg text-xs">Site Map</h3>
           <hr className="my-2 w-[58%]" />
-          <div className="flex  items-center text-[0.9rem] lg:text-lg flex-wrap w-3/4 gap-4">
+          <div className="flex  items-center text-[0.9rem] lg:text-lg flex-wrap w-3/4 gap-4 text-xs">
             <ScrollLink
               to="landing-page"
               smooth={true}
@@ -85,8 +85,8 @@ export function Footer() {
             </ScrollLink>
           </div>
         </div>
-        <div>
-          <h3 className="lg:text-lg">Let's Connect</h3>
+        <div className="">
+          <h3 className="lg:text-lg text-xs">Let's Connect</h3>
           <hr className="my-2 " />
 
           <div className="flex justify-between w-full text-xl gap-3">
@@ -111,7 +111,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-9 text-xs font-light lg:text-sm leading-5">
+      <div className="mt-9 text-[0.65rem] font-light lg:text-sm leading-5 ">
         <h3>
           © 2024. All Rights Reserved. <br /> Made in California by Daniel
           Perez. <br />
