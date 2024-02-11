@@ -1,3 +1,4 @@
+// Carousel
 import { useState } from "react";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 import { CarouselProps } from "../constants/types";
