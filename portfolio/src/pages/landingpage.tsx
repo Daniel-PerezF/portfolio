@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export function LandingPage() {
   const openResume = () => {
-    const resumeURL = `Daniel-Perez-2024-Resume.pdf`;
+    const resumeURL = `danielperezresume24.pdf`;
     window.open(resumeURL, "_blank");
   };
   useEffect(() => {
