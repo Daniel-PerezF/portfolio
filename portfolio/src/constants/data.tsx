@@ -12,8 +12,12 @@ export const frontSkills = [
     logo: "/logos/css-logo.png",
   },
   {
-    name: "React",
+    name: "Reactjs",
     logo: "/logos/react-logo.png",
+  },
+  {
+    name: "Nextjs",
+    logo: "/logos/nextjs-logo.png",
   },
   {
     name: "TailWindCSS",
@@ -27,11 +31,11 @@ export const frontSkills = [
 
 export const backSkills = [
   {
-    name: "Node.js",
+    name: "Nodejs",
     logo: "/logos/node-logo.png",
   },
   {
-    name: "Express.js",
+    name: "Expressjs",
     logo: "/logos/express-logo.svg",
   },
   {
