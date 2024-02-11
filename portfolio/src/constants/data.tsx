@@ -50,6 +50,10 @@ export const miscTools = [
     logo: "/logos/aws-logo.png",
   },
   {
+    name: "Vercel",
+    logo: "/logos/vercel-logo.svg",
+  },
+  {
     name: "Git",
     logo: "/logos/git-logo.png",
   },
