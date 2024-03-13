@@ -114,7 +114,7 @@ export function Contact() {
                   type="text"
                   name="subject"
                   required
-                  className={`mb-4 p-2 w-full focus:outline-[#FB904D] ${
+                  className={`mb-4 p-2 w-full focus:outline-[#FB904D] text-darker ${
                     darkMode ? "" : "outline-dark outline-1 outline"
                   }`}
                 />
@@ -127,7 +127,7 @@ export function Contact() {
                   type="email"
                   name="email"
                   required
-                  className={`mb-4 p-2 w-full focus:outline-[#FB904D] ${
+                  className={`mb-4 p-2 w-full focus:outline-[#FB904D] text-darker ${
                     darkMode ? "" : "outline-dark outline-1 outline"
                   }`}
                 />
@@ -137,7 +137,7 @@ export function Contact() {
                 <input
                   type="text"
                   name="linkedin"
-                  className={`mb-4 p-2 w-full focus:outline-[#FB904D] ${
+                  className={`mb-4 p-2 w-full focus:outline-[#FB904D] text-darker ${
                     darkMode ? "" : "outline-dark outline-1 outline"
                   }`}
                 />
