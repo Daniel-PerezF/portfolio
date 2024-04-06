@@ -19,7 +19,7 @@ export function Header() {
   }
   const { darkMode, toggleDarkMode } = useDarkMode();
   return (
-    <div className="flex justify-between p-1 relative z-61 pt-3">
+    <div className="flex justify-between p-1 relative z-61 pt-3 bg-dark bg-opacity-75 backdrop-blur-sm ">
       <MenuModal isOpen={isOpen} onClose={handleCloseMenu} />
       <ScrollLink
         to="landing-page"
@@ -31,7 +31,7 @@ export function Header() {
           src={`/orange-icon.png`}
           alt="dp icon"
           draggable="false"
-          className="max-w-[4rem] lg:max-w-[6rem] hover:translate-y-[2px] cursor-pointer"
+          className="max-w-[3rem] lg:max-w-[4.5rem] hover:translate-y-[2px] cursor-pointer"
         />
       </ScrollLink>
       <div className="lg:hidden">
@@ -113,7 +113,7 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
   }
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-start transition-opacity ${
+      className={`fixed inset-0 z-50 flex items-center justify-start transition-opacity  ${
         isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
