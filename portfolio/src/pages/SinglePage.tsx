@@ -8,6 +8,7 @@ import { SkillsPage } from "./SkillsPage";
 import { useDarkMode } from "../context/useDarkMode";
 import { IoIosArrowDropup } from "react-icons/io";
 import { AboutPage } from "./AboutPage";
+import { ExperiencePage } from "./ExperiencePage";
 
 export function SinglePage() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -54,6 +55,13 @@ export function SinglePage() {
         <AboutPage />
       </div>
 
+{/*Experience Page */}
+<div
+        className={`pb-20 slow  ${darkMode ? "bg-dark" : "bg-[#EBEBEB]"}`}
+        id="experience-page"
+      >
+        <ExperiencePage />
+      </div>
       {/* Skills Section */}
       <div
         className={`pb-20 slow ${darkMode ? "bg-dark" : "bg-[#EBEBEB]"}`}

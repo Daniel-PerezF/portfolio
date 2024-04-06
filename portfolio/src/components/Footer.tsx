@@ -27,9 +27,9 @@ export function Footer() {
     >
       <div className="flex justify-evenly w-full ">
         <div>
-          <h3 className="lg:text-lg text-xs">Site Map</h3>
+          <h3 className="lg:text-lg text-sm">Site Map</h3>
           <hr className="my-2 w-[58%]" />
-          <div className="flex  items-center text-[0.9rem] lg:text-lg flex-wrap w-3/4 gap-4 text-xs">
+          <div className="flex  items-center text-[0.9rem] lg:text-lg flex-wrap w-3/5 gap-4 text-sm">
             <ScrollLink
               to="landing-page"
               smooth={true}
@@ -49,6 +49,17 @@ export function Footer() {
             >
               <h3 className="cursor-pointer  hover:text-[#FB904D]  transition ease-in">
                 About
+              </h3>
+            </ScrollLink>
+
+            <ScrollLink
+              to="experience-page"
+              smooth={true}
+              duration={500}
+              offset={-110}
+            >
+              <h3 className="cursor-pointer  hover:text-[#FB904D]  transition ease-in">
+                Experience
               </h3>
             </ScrollLink>
 
@@ -85,8 +96,8 @@ export function Footer() {
             </ScrollLink>
           </div>
         </div>
-        <div className="">
-          <h3 className="lg:text-lg text-xs">Let's Connect</h3>
+        <div className="max-w-fit">
+          <h3 className="lg:text-lg text-sm whitespace-nowrap ">Let's Connect</h3>
           <hr className="my-2 " />
 
           <div className="flex justify-between w-full text-xl gap-3">

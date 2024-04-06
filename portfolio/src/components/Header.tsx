@@ -19,7 +19,7 @@ export function Header() {
   }
   const { darkMode, toggleDarkMode } = useDarkMode();
   return (
-    <div className="flex justify-between p-1 relative z-61 pt-3 bg-dark bg-opacity-75 backdrop-blur-sm ">
+    <div className={`flex justify-between p-1 relative z-61 pt-3 ${darkMode ? "bg-dark":"bg-[#EBEBEB]"} bg-opacity-75 backdrop-blur-sm `}>
       <MenuModal isOpen={isOpen} onClose={handleCloseMenu} />
       <ScrollLink
         to="landing-page"
@@ -48,7 +48,7 @@ export function Header() {
         )}
       </div>
       <div
-        className={`hidden justify-end gap-10 w-1/2 sm:hidden lg:flex text-2xl slow ${
+        className={` items-center hidden pb-[20px] justify-end gap-10 w-1/2 sm:hidden lg:flex text-2xl slow ${
           darkMode ? "text-white" : "text-darker"
         }`}
       >
@@ -72,6 +72,17 @@ export function Header() {
         >
           <h3 className="cursor-pointer hover:text-[#FB904D] transition ease-in">
             About
+          </h3>
+        </ScrollLink>
+
+        <ScrollLink
+          to="experience-page"
+          smooth={true}
+          duration={500}
+          offset={-110}
+        >
+          <h3 className="cursor-pointer hover:text-[#FB904D] transition ease-in">
+            Experience
           </h3>
         </ScrollLink>
 
@@ -160,6 +171,17 @@ function MenuModal({ isOpen, onClose }: MenuModalProps) {
               offset={30}
             >
               About
+            </ScrollLink>
+
+            <ScrollLink
+              className="hover:text-[#FB904D] ease-in-out delay-75 "
+              onClick={onClose}
+              to="experience-page"
+              smooth={true}
+              duration={500}
+              offset={-90}
+            >
+              Experience
             </ScrollLink>
 
             <ScrollLink
