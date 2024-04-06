@@ -238,7 +238,7 @@ export const projects = [
       "A front end web application for Studio Ghibli fans to view information about films.",
     fullDesc:
       "Ghibli Wiki is a front-end application tailored for Studio Ghibli enthusiasts, providing a platform to explore the entire catalog of Studio Ghibli films. This project was initiated during the junior phase at LearningFuze, the coding bootcamp I attended, and has since undergone a transformation using React.js, TypeScript, and Tailwind CSS.",
-    tech: ["React.js, TypeScript, Tailwind CSS, Fetch API, Local Storage"],
+    tech: ["React.js, TypeScript, Tailwind CSS, Fetch API, Session Storage"],
   },
   {
     name: "Portfolio Website",
