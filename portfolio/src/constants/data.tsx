@@ -238,7 +238,7 @@ export const projects = [
       "A front end web application for Studio Ghibli fans to view information about films.",
     fullDesc:
       "Ghibli Wiki is a front-end application tailored for Studio Ghibli enthusiasts, providing a platform to explore the entire catalog of Studio Ghibli films. This project was initiated during the junior phase at LearningFuze, the coding bootcamp I attended, and has since undergone a transformation using React.js, TypeScript, and Tailwind CSS.",
-    tech: ["React.js, TypeScript, Tailwind CSS, Fetch API, Session Storage"],
+    tech: ["React.js, TypeScript, Tailwind CSS, Fetch API, Local Storage"],
   },
   {
     name: "Portfolio Website",
@@ -292,7 +292,7 @@ export const projects = [
       "Another version of my portfolio website in the style of a twitter/x profile.",
     fullDesc:
       "My portfolio website is a front-end web application designed to showcase my coding journey, skills, projects, and provide a way for users to contact me. With interactive elements, responsive design, dark mode functionality, and local storage integration, my portfolio website offers a personalized and engaging experience for visitors built in the style of a twitter/x account.",
-    tech: ["React.js, TypeScript, Tailwind CSS, Local Storage"],
+    tech: ["React.js, TypeScript, Tailwind CSS, Session Storage"],
   },
 ];
 
