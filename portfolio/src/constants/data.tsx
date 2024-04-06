@@ -240,48 +240,62 @@ export const projects = [
       "Ghibli Wiki is a front-end application tailored for Studio Ghibli enthusiasts, providing a platform to explore the entire catalog of Studio Ghibli films. This project was initiated during the junior phase at LearningFuze, the coding bootcamp I attended, and has since undergone a transformation using React.js, TypeScript, and Tailwind CSS.",
     tech: ["React.js, TypeScript, Tailwind CSS, Fetch API, Local Storage"],
   },
-  // {
-  //   name: "Portfolio Website",
-  //   key: "portfolio",
-  //   mainImg: "/project-images/portfolio-mac-light.png",
-  //   imgs: [
-  //     "/project-images/portfolio-mac-light.png",
-  //     "/project-images/portfolio-landing.png",
-  //     "/project-images/portfolio-mac-about.png",
-  //     "/project-images/portfolio-mac-skills.png",
-  //     "/project-images/portfolio-mac-projects.png",
-  //     "/project-images/portfolio-mac-details.png",
-  //     "/project-images/portfolio-mac-details-mobile.png",
-  //     "/project-images/portfolio-mac-details-2.png",
-  //     "/project-images/portfolio-mac-contact.png",
-  //   ],
-  //   mobileImgs: [],
-  //   features: [
-  //     {
-  //       ft: "Interactive Background",
-  //       desc: "Implemented ts particles for an interactive background on the portfolio website, creating a visually appealing and dynamic user experience.",
-  //     },
-  //     {
-  //       ft: "Tailwind Dark Mode",
-  //       desc: "Incorporate Tailwind CSS for dark mode functionality, allowing users to switch between light and dark modes for an improved viewing experience.",
-  //     },
-  //     {
-  //       ft: "Responsive Design",
-  //       desc: "Showcase projects with both mobile and desktop views to highlight the responsiveness of each project. Ensure a seamless user experience across various devices.",
-  //     },
-  //     {
-  //       ft: "Local Storage Preferences",
-  //       desc: "Utilized local storage to persistently store and retrieve users theme preference, ensuring a personalized experience that persists between sessions.",
-  //     },
-  //   ],
-  //   live: "https://danielperez.io",
-  //   github: "https://github.com/Daniel-PerezF/portfolio",
-  //   about:
-  //     "A front end web application for showcasing my coding journey, skills, projects and a way to contact me.",
-  //   fullDesc:
-  //     "My portfolio website is a front-end web application designed to showcase my coding journey, skills, projects, and provide a way for users to contact me. With interactive elements, responsive design, dark mode functionality, and local storage integration, my portfolio website offers a personalized and engaging experience for visitors.",
-  //   tech: ["React.js, TypeScript, Tailwind CSS, TS Particles, Local Storage"],
-  // },
+  {
+    name: "Portfolio Website",
+    key: "portfolio",
+    mainImg: "/project-images/portfolio.png",
+    imgs: [
+      "/project-images/portfolio.png",
+      "/project-images/portfolio.png",
+      "/project-images/portfolio.png",
+      "/project-images/portfolio.png",
+    ],
+    mobileImgs: [],
+    features: [
+      {
+        ft: "Creative Design",
+        desc: "Utilized creativity in designing a portfolio website in the style of a Twitter/X account, aiming for a visually engaging and fun user experience.",
+      },
+      {
+        ft: "Tailwind Dark Mode",
+        desc: "Incorporate Tailwind CSS for dark mode functionality, allowing users to switch between light and dark modes for an improved viewing experience.",
+      },
+      {
+        ft: "Responsive Design",
+        desc: "Showcase projects with both mobile and desktop views to highlight the responsiveness of each project. Ensure a seamless user experience across various devices.",
+      },
+      {
+        ft: "Local Storage Preferences",
+        desc: "Utilized local storage to persistently store and retrieve users theme preference, ensuring a personalized experience that persists between sessions.",
+      },
+    ],
+    live: "https://dxniel.dev",
+    github: "https://github.com/Daniel-PerezF/portfolioX",
+    about:
+      "Another version of my portfolio website in the style of a twitter/x profile.",
+    fullDesc:
+      "My portfolio website is a front-end web application designed to showcase my coding journey, skills, projects, and provide a way for users to contact me. With interactive elements, responsive design, dark mode functionality, and local storage integration, my portfolio website offers a personalized and engaging experience for visitors built in the style of a twitter/x account.",
+    tech: ["React.js, TypeScript, Tailwind CSS, Local Storage"],
+  },
+];
+
+export const experience = [
+  {
+    id: 1,
+    name: "Teaching Assistant",
+    company: "@ LearningFuze",
+    location: "Irvine,CA | Remote",
+    time:"March 2024 - Present",
+    desc: "I cultivated collaborative learning environments, ensuring students grasped coding concepts through personalized support. I effectively communicated coding principles to enhance student comprehension and learning. Additionally, I maintained records of student interactions and progress, enabling tailored support and tracking of learning outcomes.",
+  },
+  {
+    id: 2,
+    name: "Freelance Web Developer",
+    company: "",
+    location: "Remote",
+    time:"January 2024 - Present",
+    desc: "I redesigned and rebuilt a restaurant website, implementing modern design principles and user experience techniques to enhance its overall look and functionality. Additionally, I successfully incorporated an existing online ordering system for delivery and pickup, which significantly increased customer convenience and sales. Throughout this project, I collaborated closely with a team of developers, actively participating in brainstorming sessions and contributing to the implementation of creative solutions.",
+  },
 ];
 
 export const memojis = ["/memoji-wave.png", "/memoji-laptop.png"];

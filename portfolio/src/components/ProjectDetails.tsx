@@ -177,7 +177,7 @@ export function ProjectDetails() {
           {project.features.map((feature, index) => (
             <div key={index} className="py-1 ">
               <button
-                className={`w-full text-left p-2 slow ${
+                className={`w-full text-left p-2 slow rounded-lg ${
                   darkMode ? "bg-gray-800" : "bg-slate-300"
                 } hover:outline transition ease-in-out lg:text-[1.1rem] flex justify-between ${
                   openAccordionIndex === index ? "outline " : ""
