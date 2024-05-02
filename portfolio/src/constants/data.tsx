@@ -42,6 +42,10 @@ export const backSkills = [
     name: "PostgreSQL",
     logo: "/logos/postgresql-logo.png",
   },
+  {
+    name: "MongoDB",
+    logo: "/logos/mongodb-logo.png",
+  },
 ];
 
 export const miscTools = [
