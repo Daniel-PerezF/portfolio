@@ -306,8 +306,8 @@ export const experience = [
     name: "Teaching Assistant",
     company: "@ LearningFuze",
     location: "Irvine,CA | Remote",
-    time: "March 2024 - Present",
-    desc: "I cultivated collaborative learning environments, ensuring students grasped coding concepts through personalized support. I effectively communicated coding principles to enhance student comprehension and learning. Additionally, I maintained records of student interactions and progress, enabling tailored support and tracking of learning outcomes.",
+    time: "March 2024 - May 2024",
+    desc: "As a Coding Bootcamp Teaching Assistant, I supported students in comprehending application solutions, with a focus on key technologies such as HTML, CSS, JavaScript, TypeScript, React, and PostgreSQL. I also assisted students in troubleshooting coding errors, utilizing research, documentation, and code reviews to find solutions. Furthermore, I collaborated with instructors to enhance the curriculum and improve student performance.",
   },
   {
     id: 2,
@@ -315,8 +315,16 @@ export const experience = [
     company: "",
     location: "Remote",
     time: "January 2024 - Present",
-    desc: "I redesigned and rebuilt a restaurant website, implementing modern design principles and user experience techniques to enhance its overall look and functionality. Additionally, I successfully incorporated an existing online ordering system for delivery and pickup, which significantly increased customer convenience and sales. Throughout this project, I collaborated closely with a team of developers, actively participating in brainstorming sessions and contributing to the implementation of creative solutions.",
+    desc: "In my role as a Freelance Web Developer, I designed and developed websites using modern design principles and user experience techniques, incorporating technologies like React/Next.js, MongoDB, and Tailwind CSS. I also integrated existing online ordering systems for delivery and pickup, which increased customer convenience and sales. Additionally, I collaborated with clients and teams to brainstorm ideas and deliver creative solutions. Moreover, I managed multiple projects simultaneously, ensuring timely delivery and client satisfaction.",
+  },
+  {
+    id: 3,
+    name: "Junior Front End Developer",
+    company: "@ The Daily Wire",
+    location: "Remote",
+    time: "May 2024 - Present",
+    desc: "In my role as a Junior Front End Developer, I assisted in the development of responsive web applications using HTML, CSS, JavaScript/TypeScript, and React, working under the guidance of senior developers. This experience allowed me to contribute to the implementation of UI designs and features, gaining hands-on experience in front-end development best practices. Additionally, I researched and recommended technologies and tools to meet project requirements, aligning with design specifications and features.",
   },
 ];
 
-export const memojis = ["/memoji-wave.png", "/memoji-laptop.png"];
+export const memojis = ["/memoji.png", "/memoji-laptop.png"];
