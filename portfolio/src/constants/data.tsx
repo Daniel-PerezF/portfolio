@@ -327,4 +327,4 @@ export const experience = [
   },
 ];
 
-export const memojis = ["/memoji.png", "/memoji-laptop.png"];
+export const memojis = ["./memoji.png", "/memoji-laptop.png"];
