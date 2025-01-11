@@ -19,7 +19,11 @@ export function Header() {
   }
   const { darkMode, toggleDarkMode } = useDarkMode();
   return (
-    <div className={`flex justify-between p-1 relative z-61 pt-3 ${darkMode ? "bg-dark":"bg-[#EBEBEB]"} bg-opacity-75 backdrop-blur-sm `}>
+    <div
+      className={`flex justify-between p-1 relative z-61 pt-3 ${
+        darkMode ? "bg-dark" : "bg-[#EBEBEB]"
+      } bg-opacity-75 backdrop-blur-sm `}
+    >
       <MenuModal isOpen={isOpen} onClose={handleCloseMenu} />
       <ScrollLink
         to="landing-page"
@@ -28,7 +32,7 @@ export function Header() {
         onClick={scrollToTop}
       >
         <img
-          src={`/orange-icon.png`}
+          src={`./orange-icon.png`}
           alt="dp icon"
           draggable="false"
           className="max-w-[3rem] lg:max-w-[4.5rem] hover:translate-y-[2px] cursor-pointer"
