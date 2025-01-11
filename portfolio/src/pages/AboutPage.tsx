@@ -16,7 +16,11 @@ export function AboutPage() {
             <div className="w-full flex justify-center">
               <div className="overflow-hidden w-full justify-center flex">
                 <div className="max-w-[10rem] h-[200px] overflow-hidden">
-                  <img src={memojis[0]} className="w-full rounded-md " />
+                  <img
+                    src={memojis[0]}
+                    className="w-full rounded-md"
+                    alt="img"
+                  />
                 </div>
               </div>
             </div>
