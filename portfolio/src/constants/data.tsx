@@ -1,109 +1,109 @@
 export const frontSkills = [
   {
     name: "JavaScript",
-    logo: "/logos/js-logo.png",
+    logo: "./logos/js-logo.png",
   },
   {
     name: "HTML5",
-    logo: "/logos/html-logo.png",
+    logo: "./logos/html-logo.png",
   },
   {
     name: "CSS3",
-    logo: "/logos/css-logo.png",
+    logo: "./logos/css-logo.png",
   },
   {
     name: "Reactjs",
-    logo: "/logos/react-logo.png",
+    logo: "./logos/react-logo.png",
   },
   {
     name: "Nextjs",
-    logo: "/logos/nextjs-logo.png",
+    logo: "./logos/nextjs-logo.png",
   },
   {
     name: "TailWindCSS",
-    logo: "/logos/tailwind-logo.png",
+    logo: "./logos/tailwind-logo.png",
   },
   {
     name: "TypeScript",
-    logo: "/logos/typescript-logo.png",
+    logo: "./logos/typescript-logo.png",
   },
 ];
 
 export const backSkills = [
   {
     name: "Nodejs",
-    logo: "/logos/node-logo.png",
+    logo: "./logos/node-logo.png",
   },
   {
     name: "Expressjs",
-    logo: "/logos/express-logo.svg",
+    logo: "./logos/express-logo.svg",
   },
   {
     name: "PostgreSQL",
-    logo: "/logos/postgresql-logo.png",
+    logo: "./logos/postgresql-logo.png",
   },
   {
     name: "MongoDB",
-    logo: "/logos/mongodb-logo.png",
+    logo: "./logos/mongodb-logo.png",
   },
 ];
 
 export const miscTools = [
   {
     name: "AWS",
-    logo: "/logos/aws-logo.png",
+    logo: "./logos/aws-logo.png",
   },
   {
     name: "Vercel",
-    logo: "/logos/vercel-logo.svg",
+    logo: "./logos/vercel-logo.svg",
   },
   {
     name: "Git",
-    logo: "/logos/git-logo.png",
+    logo: "./logos/git-logo.png",
   },
   {
     name: "GitHub",
-    logo: "/logos/github-logo.png",
+    logo: "./logos/github-logo.png",
   },
   {
     name: "JWT",
-    logo: "/logos/jwt-logo.svg",
+    logo: "./logos/jwt-logo.svg",
   },
   {
     name: "NPM",
-    logo: "/logos/npm-logo.png",
+    logo: "./logos/npm-logo.png",
   },
   {
     name: "React Router",
-    logo: "/logos/react-router-logo.png",
+    logo: "./logos/react-router-logo.png",
   },
   {
     name: "Vite",
-    logo: "/logos/vite-logo.png",
+    logo: "./logos/vite-logo.png",
   },
   {
     name: "Canva",
-    logo: "/logos/canva-logo.png",
+    logo: "./logos/canva-logo.png",
   },
   {
     name: "Figma",
-    logo: "/logos/figma-logo.png",
+    logo: "./logos/figma-logo.png",
   },
   {
     name: "ESLint",
-    logo: "/logos/eslint-logo.png",
+    logo: "./logos/eslint-logo.png",
   },
   {
     name: "Docker",
-    logo: "/logos/docker-logo.png",
+    logo: "./logos/docker-logo.png",
   },
   {
     name: "Visual Studio Code",
-    logo: "/logos/vscode-logo.png",
+    logo: "./logos/vscode-logo.png",
   },
   {
     name: "Slack",
-    logo: "/logos/slack-logo.png",
+    logo: "./logos/slack-logo.png",
   },
 ];
 
