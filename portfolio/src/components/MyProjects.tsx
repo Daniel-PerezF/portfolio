@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { projects } from "../constants/data";
 import { useDarkMode } from "../context/useDarkMode";
-import { GiClick } from "react-icons/gi";
 
 export function MyProjects() {
   const { darkMode } = useDarkMode();
@@ -18,9 +17,6 @@ export function MyProjects() {
                     className="w-full  rounded "
                     alt={`Project ${project.name} img`}
                   />
-                  <div className="absolute bottom-20 right-40 text-5xl  text-[#F57A00] transition-transform group-hover:translate-y-[-1rem] group-hover:translate-x-[-1rem]">
-                    <GiClick />
-                  </div>
                 </Link>
               </div>
               <div
